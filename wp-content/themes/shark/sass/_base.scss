@@ -1,0 +1,28 @@
+html,body{
+	width:100%;
+	@media screen and (min-width: $break-small+1){
+		height:100%;
+	}
+	//overflow-x:hidden;
+	@media screen and (max-width: $break-small){
+		overflow-x: hidden;
+	}
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: $gibson-regular;
+	@include font-size(16);
+	line-height:130%;
+	-webkit-font-smoothing: antialiased;
+
+	@media screen and (max-width: $break-xlarge){
+		@include font-size(13);
+	}
+	@media screen and (max-width: $break-medium){
+		@include font-size(12);
+	}
+	color: $grey;
+	overflow-x: hidden;
+}

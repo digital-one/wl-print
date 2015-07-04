@@ -1,0 +1,447 @@
+.white{
+	background-color:white;
+	color: $grey;
+	.underline{
+		margin-bottom: 0;
+		&:after{
+			background-color: $light-blue;
+		}
+	}
+	h1,h2,h3,h4,h5{
+		color: $blue;
+	}
+	h4,p{
+		color: $grey;
+	}
+	&.page-title{
+		h2{
+			color: $grey;
+		}
+	}
+}
+.blue{
+	background-color: $blue;
+}
+.pink{
+	background-color: $pink;
+}
+.orange{
+	background-color: $orange;
+}
+.blue,.pink,.orange{
+	color: white;
+	.underline{
+		&:after{
+			background-color: white;
+		}
+	}
+	h1,h2,h3,h4,h5,p,a{
+		color: white;
+	}
+	p,nav{
+		a:link,a:visited{
+			@include opacity(1);
+		}
+		a:hover,a:active{
+			@include opacity(.7);
+		}
+	}
+}
+aside{
+	
+}
+section.page-title{
+	background-color:white;
+	@extend %full-width;
+	height: 25%;
+	box-sizing:border-box;
+	@media screen and (min-width: $break-small+1) and (max-width: $break-large){
+		padding-top:70px;
+		//height: 20%;
+	}
+	@media screen and (max-width: $break-large){
+		height:28%;
+	}
+	@media screen and (max-width: $break-small){
+		height: 134px;
+	}
+	position: relative;
+	.vcenter{
+     		position: relative;	
+			width: 100%;
+     		height: 100%;
+			&:before{
+     			content: "";
+     			display: inline-block;
+     			vertical-align: middle;
+     			height: 100%;
+     			margin-right: -0.25em;
+			}
+			div{
+				display: inline-block;
+     			width:99%;
+     			vertical-align: middle;
+     			text-align: center;
+     		}
+     	}
+	/*div{
+		//@include vertical-align; 
+		text-align: center;
+	}*/
+	#work-single &{
+		height:380px; 
+		@media screen and (max-width: $break-small){
+			height: 250px;
+			top: 120px;
+		}
+		background-color: $light-grey;
+		
+	}
+}
+section.banner{
+	@extend %full-width;
+	//@include bg-cover;
+	background-repeat:repeat-x;
+	background-position: top left;
+	background-size: auto 100%;
+	-webkit-backface-visibility: hidden;
+	background-color: $blue;
+	//-webkit-transform: translateZ(0) scale(1.0, 1.0);
+	@extend .clearfix;
+	overflow: hidden;
+	background-color: #ccc;
+	height:auto;
+}
+.grid-square{
+	width: 14.28%;
+	.inner-wrap{
+		@include abs-pos(-2px,-2px,-2px,-2px);
+	}
+	@media screen and (max-width:768px){
+		width: 33.33%; //8 squares
+	}
+	@media screen and (min-width: 769px) and (max-width:1200px){
+		width: 20%; //10 squares
+	}
+	@media screen and (min-width: 1201px) and (max-width:1450px){
+		width: 16.66%; //12 squares
+	}
+	&.medium-up{
+		@media screen and (max-width: 768px){
+			display: none;  
+		}
+	}
+	&.large-up{
+		@media screen and (max-width: 1200px){
+			display: none;
+		}
+	}
+	&.xlarge-up{
+		@media screen and (max-width: 1450px){
+			display: none;
+		}
+	}
+	display: block;
+	float: left;
+	position: relative;
+	overflow:hidden;
+	&:before{
+		content:"";
+		padding-top:100%;
+		display: block;
+	}
+	img{
+		position: relative;
+		display: block;
+		width:100%;
+		height:auto;
+	}
+}
+section.content{
+	//background-color:white;
+	@extend %full-width;
+	@extend .clearfix;
+	height:25%;
+	@media screen and (max-width: $break-small){
+		height: auto;
+	}
+	@media screen and (max-width: $break-large){
+		height:22%;
+	}
+	position: relative;
+	overflow:visible;
+	.column-wrap{
+		padding: 2% 3%;
+		.what-we-do &{
+			padding: 0;
+		}
+		width:100%;
+		height:100%;
+		display: block;
+		@media screen and (max-width: $break-large){
+			padding: 3%;
+		}
+		@media screen and (max-width: $break-small){
+			padding:40px 5% 0;
+		}
+		div.column{
+			display: block;
+			height:100%;
+			float:left;
+			width:33.33%;
+			.what-we-do &{
+				width:25%;
+				text-align: center;
+				&:nth-child(3n){
+					figure{
+						img{
+							margin-top: 3px;
+						}
+					}
+				}
+				@media screen and (max-width: $break-small){
+					width:100%;
+					.inner{
+						padding:0;
+						border:none;
+					}
+					
+				}
+				figure{
+					width:auto;
+					height:60px;
+					display: inline-block;
+					margin:0 auto 20px;
+					@media screen and (min-width: $break-large){
+						height:70px;
+					}
+					@media screen and (min-width: $break-xlarge){
+						height:90px;
+					}
+					img{
+						display: inline-block;
+						height:100%;
+						width:auto;
+						//max-width: 80px;
+						@media screen and (min-width: $break-large){
+							//max-width: 90px;
+						}
+						@media screen and (min-width: $break-xlarge){
+							//max-width: 110px;
+						}
+					}
+				}
+			}
+			.inner{
+				padding: 3% 8%;
+				.what-we-do &{
+					padding: 6% 8% 3%;
+					@include transition(background-color .3s ease);
+					cursor:pointer;
+					&:hover,&:active{
+						background-color: darken($blue,5%);
+					}
+				}
+				width:100%;
+				display: block;
+				border-left:2px solid #5e91b8;
+				height:100%;
+				
+				@media screen and (max-width: $break-xlarge){
+					padding: 3% 6%;
+					.what-we-do &{
+						padding: 8% 6% 3%;
+					}
+				}
+				@media screen and (max-width: $break-large){
+					padding: 2% 4%;
+					.what-we-do &{
+						padding: 5% 4%;
+					}
+				}
+				@media screen and (max-width: $break-small){
+					padding: 5% 4%;
+					.what-we-do &{
+						border-left: 0;
+						border-top:1px solid #5e91b8;
+					}
+				}
+			}
+			&:first-child{
+				.inner{
+					padding-left:0;
+					.what-we-do &{
+						padding-left:8%;
+					}
+					
+					border:none;
+					@media screen and (max-width: $break-small){
+						border-left:1px solid rgba(255,255,255,.6);
+						padding-left:8%;
+						.what-we-do &{
+							padding-left:0;
+							border:none;
+						}
+					}
+				}
+			}
+			&:last-child{
+				.inner{
+					padding-right:0;
+					.what-we-do &{
+						padding-right:8%;
+					}
+				}
+			}
+			@media screen and (max-width: $break-small){
+				width:100%;
+				float:none;
+				margin-bottom: 40px;
+				padding:1% 10% 1px;
+				.what-we-do &{
+					padding: 0;
+					margin-bottom: 0;
+				}
+				height: auto;
+			}
+			p{
+				margin-bottom: 0;
+			}
+		}
+	}
+	.scrollable &{
+		height: auto;
+	}
+}
+.button{
+	height:48px;
+	line-height: 48px;
+	display:inline-block;
+	border:1px solid white;
+	padding: 0 71px 0 21px;
+	text-align:left;
+	color: white !important;
+	font-family: $gibson-semibold;
+	text-transform:uppercase;
+	position:relative;
+	cursor:pointer;
+	@include font-size(16);
+	@media screen and (max-width: $break-xlarge){
+		@include font-size(14);
+		padding: 0 66px 0 16px;
+		height:42px;
+		line-height: 42px;
+	}
+	@media screen and (max-width: $break-small){
+		padding: 0 51px 0 15px;
+		height:40px;
+		line-height: 40px;
+		@include font-size(14);
+	}
+	.caption &{
+		height:66px;
+		line-height: 66px;
+		padding: 0 74px;
+		@include rgba-bg(0,0,0,#000000,.3);
+		@media screen and (max-width: $break-xlarge){
+			height: 52px;
+    		line-height: 52px;
+    		padding: 0 74px 0 36px;
+		}
+		@media screen and (max-width: $break-small){
+			padding: 0 51px 0 15px;
+			height:40px;
+			line-height: 40px;
+			@include font-size(14);
+		}
+		&:hover,&:active{
+			@include rgba-bg(0,0,0,#000000,.5);
+		}
+	}
+	figcaption &{
+		@include font-size(12);
+		&:hover,&:active{
+			background-color: transparent;
+		}
+	}
+	&:after{
+		content:"";
+		display: block;
+		width:36px;
+		height:13px;
+		background:url('../images/arrow.png') left top no-repeat;
+		.enlightenment &{
+			background: none;
+		}
+		@include abs-pos(50%,16px,auto,auto);
+		margin-top:-6px;
+		@media screen and (max-width: $break-small){
+			right:11px;
+			width:30px;
+			height:11px;
+			background-size: 30px 11px;
+		}
+	}
+	&:hover,&:active{
+		background-color:rgba(0,0,0,.15);
+		.enlightenment &{
+			background-color: white;
+			border-color: black;
+			color: black !important;
+		}
+	}	
+	.enlightenment &{
+		border-color: $grey;
+		color: $grey !important;
+		padding: 0 21px;
+	}
+}
+.underline{
+	&:after{
+		content:"";
+		display: block;
+		width:70px;
+		height: 2px;
+		background-color: white;
+		margin: 25px auto 0;
+		@media screen and (max-width: $break-xlarge){
+			margin: 20px auto 0;
+		}
+		@media screen and (max-width: $break-small){
+			margin: 15px auto 0;
+			width:35px;
+		}
+		.caption &{
+			margin: 38px auto 40px;	
+			@media screen and (max-width: $break-small){
+				margin: 25px auto 37px;
+			}
+		}
+		.white &{
+			background-color: $light-blue;
+		}
+	}
+}
+.tooltip-pointer{
+	display:inline-block;
+	z-index: 9999;
+	position: relative;
+	margin:0 0 8px;
+	height:30px;
+	line-height:32px;
+	color: white;
+	@include font-size(14);
+	text-align: center;
+	font-family: $proximanova-semibold;
+	padding: 0 15px;
+	background-color: $grey;
+	@include abs-pos(0,auto,auto,0);
+	&:after{
+		content:"";
+		width:16px;
+		height:8px;
+		@include abs-pos(30px,auto,-8px,50%);
+		margin-left:-8px;
+		background:url('../images/tooltip-pointer.png') center top no-repeat;
+	}
+}

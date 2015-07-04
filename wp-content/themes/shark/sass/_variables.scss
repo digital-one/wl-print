@@ -1,0 +1,93 @@
+//neat overrides
+$max-width: 1920px; //overide neat outer container width
+$visual-grid: false; 
+
+//colours
+$blue: #19629a;
+$light-blue: #209dd5;
+$grey: #605959;
+$light-grey: #dcdcdc;
+$dark-grey: #272729;
+$pink: #d3185f;
+$orange: #f4831f;
+
+//font face
+
+@font-face {
+    font-family: 'Gibson-Bold_gdi';
+    src: url('../fonts/Gibson-Bold_gdi.eot');
+    src: url('../fonts/Gibson-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gibson-Bold_gdi.woff') format('woff'),
+         url('../fonts/Gibson-Bold_gdi.ttf') format('truetype'),
+         url('../fonts/Gibson-Bold_gdi.svg#Gibson-Bold_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gibson-SemiBold_gdi';
+    src: url('../fonts/Gibson-SemiBold_gdi.eot');
+    src: url('../fonts/Gibson-SemiBold_gdi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gibson-SemiBold_gdi.woff') format('woff'),
+         url('../fonts/Gibson-SemiBold_gdi.ttf') format('truetype'),
+         url('../fonts/Gibson-SemiBold_gdi.svg#Gibson-SemiBold_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gibson-Regular_gdi';
+    src: url('../fonts/Gibson-Regular_gdi.eot');
+    src: url('../fonts/Gibson-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gibson-Regular_gdi.woff') format('woff'),
+         url('../fonts/Gibson-Regular_gdi.ttf') format('truetype'),
+         url('../fonts/Gibson-Regular_gdi.svg#Gibson-Regular_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanova-bold-webfont';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-bold-webfont.svg#proximanova-bold-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proximanova-semibold-webfont';
+    src: url('../fonts/proximanova-semibold-webfont.eot');
+    src: url('../fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-semibold-webfont.svg#proximanova-semibold-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proximanova-regular-webfont';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regular-webfont.svg#proximanova-regular-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//fonts
+$gibson-bold: "Gibson-Bold_gdi", sans-serif;
+$gibson-semibold: "Gibson-SemiBold_gdi", sans-serif;
+$gibson-regular: "Gibson-Regular_gdi", sans-serif;
+$proximanova-bold: "proximanova-bold-webfont", sans-serif;
+$proximanova-semibold: "proximanova-semibold-webfont", sans-serif;
+$proximanova-regular: "proximanova-regular-webfont", sans-serif;
+$georgia: Georgia, Times, serif;
+
+//break points
+$break-small: 660px; //mobile
+$break-medium: 768px; //ipad 
+$break-large: 1020px; //desktop
+$break-xlarge: 1650px; //hi res desktop

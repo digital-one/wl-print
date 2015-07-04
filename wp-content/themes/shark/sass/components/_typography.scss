@@ -1,0 +1,74 @@
+h1,h2,h3,h4,h5{
+	font-family: $gibson-semibold;
+	text-transform:uppercase;
+	@include font-size(50);
+	color: $blue;
+	font-weight:normal;
+	line-height:90%;
+	margin: 0 0 10px;
+	@media screen and (max-width: $break-xlarge){
+		@include font-size(38);
+	}
+	@media screen and (max-width: $break-small){
+		@include font-size(26);
+		margin-bottom: 7px;
+	}
+}
+h1{
+	letter-spacing:-1px;
+}
+h2,h4{
+	font-family: $georgia;
+	color: $grey;
+	@include font-size(18);
+	@media screen and (max-width: $break-xlarge){
+		@include font-size(14);
+	}
+	text-transform: none;
+	font-style:italic;
+}
+h3{
+	@include font-size(22);
+	color: white;
+	margin-bottom:16px;
+
+
+	@media screen and (max-width: $break-xlarge){
+		@include font-size(18);
+	}
+	@media screen and (max-width: $break-medium){
+		@include font-size(16);
+	}
+}
+h4{
+	@include font-size(14);
+	color: white;
+	line-height: 120%;
+	@media screen and (max-width: $break-xlarge){
+		@include font-size(13);
+	}
+}
+a{
+	text-decoration: none;
+	@include transition(all 0.3s ease-in-out);
+	&:link,&:visited{
+		color:$blue;
+	}
+	&:hover,&:active{
+		color: $grey;
+	}
+}
+small{
+	@include font-size(14);
+	display:block;
+	@media screen and (max-width: $break-xlarge){
+		@include font-size(12);
+	}
+}
+p{
+	margin-bottom: 30px;
+}
+address{
+	font-style:normal;
+	margin-bottom: 3px;
+}
