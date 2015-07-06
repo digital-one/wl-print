@@ -8,7 +8,7 @@
 		}
 	}
 	h1,h2,h3,h4,h5{
-		color: $blue;
+		color: $light-blue;
 	}
 	h4,p{
 		color: $grey;
@@ -46,9 +46,6 @@
 			@include opacity(.7);
 		}
 	}
-}
-aside{
-	
 }
 section.page-title{
 	background-color:white;
@@ -111,6 +108,9 @@ section.banner{
 	overflow: hidden;
 	background-color: #ccc;
 	height:auto;
+	.client-resources &, .contact &{
+		height:50%;
+	}
 }
 .grid-square{
 	width: 14.28%;
@@ -157,6 +157,7 @@ section.banner{
 		height:auto;
 	}
 }
+
 section.content{
 	//background-color:white;
 	@extend %full-width;
@@ -172,7 +173,7 @@ section.content{
 	overflow:visible;
 	.column-wrap{
 		padding: 2% 3%;
-		.what-we-do &{
+		.what-we-do &, .client-resources &{
 			padding: 0;
 		}
 		width:100%;
@@ -232,15 +233,26 @@ section.content{
 					}
 				}
 			}
+			.client-resources &{
+				width:20%;
+				text-align: center;
+				@media screen and (max-width: $break-small){
+					width:100%;
+					border-top:1px solid #5e91b8;
+				}
+			}
 			.inner{
 				padding: 3% 8%;
-				.what-we-do &{
+				.what-we-do &,.client-resources &{
 					padding: 6% 8% 3%;
 					@include transition(background-color .3s ease);
 					cursor:pointer;
 					&:hover,&:active{
 						background-color: darken($blue,5%);
 					}
+				}
+				.client-resources &{
+					
 				}
 				width:100%;
 				display: block;
@@ -249,28 +261,34 @@ section.content{
 				
 				@media screen and (max-width: $break-xlarge){
 					padding: 3% 6%;
-					.what-we-do &{
+					.what-we-do &, .client-resources &{
 						padding: 8% 6% 3%;
 					}
 				}
 				@media screen and (max-width: $break-large){
 					padding: 2% 4%;
-					.what-we-do &{
+					.what-we-do &, .client-resources &{
 						padding: 5% 4%;
+					}
+					.client-resources &{
+						padding: 8% 4% 8%;
 					}
 				}
 				@media screen and (max-width: $break-small){
 					padding: 5% 4%;
-					.what-we-do &{
+					.what-we-do &, .client-resources &{
 						border-left: 0;
 						border-top:1px solid #5e91b8;
+					}
+					.client-resources &{
+						border-top:none;
 					}
 				}
 			}
 			&:first-child{
 				.inner{
 					padding-left:0;
-					.what-we-do &{
+					.what-we-do &,.client-resources &{
 						padding-left:8%;
 					}
 					
@@ -282,13 +300,16 @@ section.content{
 							padding-left:0;
 							border:none;
 						}
+						.client-resources &{
+							border-left:0;
+						}
 					}
 				}
 			}
 			&:last-child{
 				.inner{
 					padding-right:0;
-					.what-we-do &{
+					.what-we-do &, .client-resources &{
 						padding-right:8%;
 					}
 				}
@@ -298,6 +319,10 @@ section.content{
 				float:none;
 				margin-bottom: 40px;
 				padding:1% 10% 1px;
+				.client-resources &{
+					margin-bottom:0;
+					padding:0;
+				}
 				.what-we-do &{
 					padding: 0;
 					margin-bottom: 0;
@@ -305,7 +330,16 @@ section.content{
 				height: auto;
 			}
 			p{
-				margin-bottom: 0;
+				margin-bottom: 20px;
+				.client-resources &{
+					margin-bottom: 20px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
@@ -319,6 +353,36 @@ section.content{
 	display:inline-block;
 	border:1px solid white;
 	padding: 0 71px 0 21px;
+	.client-resources &{
+		height:40px;
+		line-height: 40px;
+		padding: 0 51px 0 16px;
+		
+		@media screen and (max-width: $break-xlarge){
+			h3{
+				@include font-size(16);
+			}
+			padding: 0 10px;
+		@include font-size(12);
+			height: 30px;
+			line-height: 30px;
+			&:after{
+				display: none;
+			}
+		}
+		@media screen and (max-width: $break-large){
+			padding: 0 10px;
+		}
+		@media screen and (max-width: $break-medium){
+			@include font-size(11);
+			padding: 0 5px;
+			//width:100%;
+			text-align: center;
+		}
+		@media screen and (max-width: $break-small){
+				padding: 0 15px;
+		}
+	}
 	text-align:left;
 	color: white !important;
 	font-family: $gibson-semibold;
@@ -327,7 +391,7 @@ section.content{
 	cursor:pointer;
 	@include font-size(16);
 	@media screen and (max-width: $break-xlarge){
-		@include font-size(14);
+		//@include font-size(12);
 		padding: 0 66px 0 16px;
 		height:42px;
 		line-height: 42px;
@@ -370,6 +434,12 @@ section.content{
 		width:36px;
 		height:13px;
 		background:url('../images/arrow.png') left top no-repeat;
+		.client-resources &{
+			width:26px;
+			height: 9px;
+			background-size: 100% auto;
+			margin-top:-4px;
+		}
 		.enlightenment &{
 			background: none;
 		}
@@ -443,5 +513,24 @@ section.content{
 		@include abs-pos(30px,auto,-8px,50%);
 		margin-left:-8px;
 		background:url('../images/tooltip-pointer.png') center top no-repeat;
+	}
+}
+a.close{
+	display: block;
+	width:60px;
+	height:60px;
+	cursor: pointer;
+	@include transition(none);
+	@extend %ir;
+	background: $blue url('../images/close.png') center center no-repeat;
+	@include abs-pos(0,0,auto,auto);
+	z-index: 998;
+	&:hover,&:active{
+		@include opacity(1);
+	}
+	@media screen and (max-width: $break-xlarge){
+		width:40px;
+		height:40px;
+		background-size:16px 16px;
 	}
 }

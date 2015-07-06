@@ -46,7 +46,7 @@ $logo_src = $src;
 </div>
 </section>
 <div class="content">
-<section id="challenge" class="intro white"><h3><?php echo get_field('first_section_heading',$post->ID) ?></h3><h4 class="underline"><?php echo get_field('first_section_sub_heading',$post->ID) ?></h4><p><?php echo get_field('first_section_text',$post->ID) ?></p>
+<section id="challenge" class="intro white"><h3 class="underline"><?php echo get_field('first_section_heading',$post->ID) ?></h3><p><?php echo get_field('first_section_text',$post->ID) ?></p>
 </section>
  <?php
 list($image1_src,$w,$h) = wp_get_attachment_image_src(get_field('second_section_image_1',$post->ID),'portfolio-column-full-height');
@@ -58,7 +58,9 @@ list($image2_src,$w,$h) = wp_get_attachment_image_src(get_field('second_section_
 <div class="half column"><div class="cell half-height" style="background-color:<?php echo get_field('secondary_colour',$post->ID) ?>;"><div class="inner"><div class="vcenter-wrap"><div class="vcenter-inner"><h5 class="underline"><?php echo get_field('second_section_heading',$post->ID) ?></h5><p><?php echo get_field('second_section_text',$post->ID) ?></p></div></div></div></div><div class="cell half-height image blue preload" style="background-image:url('<?php echo $image2_src ?>');"><div class="inner"><div></div></div></div></div>
 <div class="half column"><div class="cell image preload-home" style="background-image:url('<?php echo $image1_src ?>');"><div class="inner"></div></div></div>
     </section>
-    <section id="result" class="intro white"><h3><?php echo get_field('third_section_heading',$post->ID) ?></h3><h4 class="underline"><?php echo get_field('third_section__sub_heading',$post->ID) ?></h4>
+    <section id="result" class="intro white underline"><h3 class="underline"><?php echo get_field('third_section_heading',$post->ID) ?></h3>
+      <?php
+      /*
    <?php    
     if($terms = wp_get_post_terms($post->ID, 'casestudies_category')): ?>
           <nav  id="categories" role="navigation"><ul>
@@ -72,6 +74,7 @@ list($image2_src,$w,$h) = wp_get_attachment_image_src(get_field('second_section_
 <?php endforeach ?>
 </ul></nav>
 <?php endif ?>
+*/ ?>
 <p><?php echo get_field('third_section_text',$post->ID) ?></p>
         <nav id="social-share">
 <span>Share this</span>
@@ -117,7 +120,7 @@ list($image2_src,$w,$h) = wp_get_attachment_image_src(get_field('third_section_i
 <div class="column"><div class="cell image" style="background-image:url('<?php echo $image2_src ?>');"></div></div>
 <?php endif ?>
     </section>
-<footer id="cta" class="intro" style="background-color:<?php echo $colour ?>;"><h3><?php echo get_field('fourth_section_heading',$post->ID) ?></h3><h4><?php echo get_field('fourth_section_text',$post->ID) ?></h4><a href="mailto:enquiries@sharkdesign.co.uk" class="button">Start your project</a>
+<footer id="cta" class="intro" style="background-color:<?php echo $colour ?>;"><h3 class="underline"><?php echo get_field('fourth_section_heading',$post->ID) ?></h3><a href="mailto:enquiries@sharkdesign.co.uk" class="button">Start your project</a>
 </footer>
    </div>
 </div>

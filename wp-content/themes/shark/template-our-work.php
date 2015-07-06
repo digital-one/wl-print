@@ -1,6 +1,6 @@
 <?php /* Template Name: Our Work */ ?>
 <?php get_header() ?>
-<div class="section page" id="<?php echo $post->post_name ?>" data-anchor="<?php echo $post->post_name ?>" data-title="<?php wp_title()?>">
+<div class="section our-work page" id="<?php echo $post->post_name ?>" data-anchor="<?php echo $post->post_name ?>" data-title="<?php wp_title()?>">
   <!-- title -->
 <section class="page-title white">
   <div class="vcenter">

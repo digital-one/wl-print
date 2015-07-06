@@ -1,6 +1,6 @@
 <?php /* Template Name: Testimonials */ ?>
 <?php get_header() ?>
-<div class="section page" id="<?php echo $post->post_name ?>" data-anchor="<?php echo $post->post_name ?>" data-title="<?php wp_title()?>">
+<div class="section page what-clients-say" id="<?php echo $post->post_name ?>" data-anchor="<?php echo $post->post_name ?>" data-title="<?php wp_title()?>">
   <!-- title -->
 <section class="page-title white">
   <div class="vcenter">
@@ -23,33 +23,54 @@
         <?php
             list($src,$w,$h) = wp_get_attachment_image_src(get_field('client_logo',$client),'full');
             ?>
-     <li><a href="<?php echo get_permalink($client->ID) ?>" class="push-link"><div class="logo"><img src="<?php echo $src ?>" alt="<?php echo $client->name ?>" /></div></a></li>
+     <li><a class="client"><div class="logo"><img src="<?php echo $src ?>" alt="<?php echo $client->name ?>" /></div></a></li>
  <?php endforeach ?>
 </ul>
 <!-- /featured work -->
+<a class="close">Close</a>
 <div id="testimonial-slider">
+  <?php
+    $args = array(
+      'hide_empty' => 0,
+      'number' => 6
+      );
+      if($clients = get_terms( 'testimonial_category', $args)):
+        foreach($clients as $client): 
+  $args = array(
+    'post_type' => 'testimonial',
+    'post_status' => 'publish',
+    'tax_query' => array(
+      array(
+        'taxonomy' => 'testimonial_category',
+        'field' => 'id',
+        'terms' => $client->term_id
+      )
+    ),
+    'orderby' => 'menu_order',
+    'order' => 'ASC'
+    );
+  if($testimonials = get_posts($args)):
+    foreach($testimonials as $testimonial):
+       list($src,$w,$h) = wp_get_attachment_image_src(get_field('client_logo',$client),'full');
+    ?>
 <!--slide-->
 <div class="slick-slide">
   <div class="vcenter">
-<header id="logo">Logo here</header>
+<header class="logo"><img src="<?php echo $src; ?>" alt="<?php echo $client->name ?>" /></header>
 <blockquote>
-<p>&quote;There have been no issues with the quality of the printed piece in the entire time of working with Waddington &amp; Ledger. They set the standards on quality customer service. They perform on a level not seen from other suppliers of this type.&quote;</p>
-<footer>Helen Diamand, Marketing Services Manager</footer>
+<p>&quot;<?php echo $testimonial->post_content ?>&quot;</p>
+<footer><?php echo $testimonial->post_title ?></footer>
 </blockquote>
 </div>
 </div>
 <!--/slide-->
-<!--slide-->
-<div class="slick-slide">
-  <div class="vcenter">
-<header id="logo">Logo here</header>
-<blockquote>
-<p>&quote;There have been no issues with the quality of the printed piece in the entire time of working with Waddington &amp; Ledger. They set the standards on quality customer service. They perform on a level not seen from other suppliers of this type.&quote;</p>
-<footer>Helen Diamand, Marketing Services Manager</footer>
-</blockquote>
-</div>
-</div>
-<!--/slide-->
+<?php
+  endforeach;
+  endif;
+  endforeach;
+  endif;
+?>
+
 </div>
 </div>
 <?php endif ?>

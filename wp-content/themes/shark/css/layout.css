@@ -772,11 +772,12 @@ ul {
  *    `:before` to contain the top-margins of child elements.
  */
 /* line 11, ../sass/helpers/classes/_clearfix.scss */
-.clearfix:before, header#header:before, section.banner:before, section.content:before,
+.clearfix:before, header#header:before, section.banner:before, section.content:before, ul#testimonial-clients:before,
 .clearfix:after,
 header#header:after,
 section.banner:after,
-section.content:after {
+section.content:after,
+ul#testimonial-clients:after {
   content: " ";
   /* 1 */
   display: table;
@@ -784,7 +785,7 @@ section.content:after {
 }
 
 /* line 16, ../sass/helpers/classes/_clearfix.scss */
-.clearfix:after, header#header:after, section.banner:after, section.content:after {
+.clearfix:after, header#header:after, section.banner:after, section.content:after, ul#testimonial-clients:after {
   clear: both;
 }
 
@@ -793,7 +794,7 @@ section.content:after {
  * Include this rule to trigger hasLayout and contain floats.
  */
 /* line 23, ../sass/helpers/classes/_clearfix.scss */
-.clearfix, header#header, section.banner, section.content {
+.clearfix, header#header, section.banner, section.content, ul#testimonial-clients {
   *zoom: 1;
 }
 
@@ -807,7 +808,7 @@ header#header #contacts, nav#nav, section.page-title, section.banner, section.co
 }
 
 /* line 9, ../sass/helpers/_placeholders.scss */
-#preloader-screen span, header#header a#mobile-menu, nav.social li a, #video-overlay a#video-close, nav#sectors a.close, nav#social-share li a, nav.controls ul li a, a.video-control {
+#preloader-screen span, header#header a#mobile-menu, nav.social li a, a.close, #video-overlay a#video-close, nav#social-share li a, nav.controls ul li a, a.video-control {
   overflow: hidden;
   text-indent: -10000px;
 }
@@ -859,15 +860,8 @@ body {
 @media screen and (max-width: 1650px) {
   /* line 14, ../sass/_base.scss */
   body {
-    font-size: 13px;
-    font-size: 1.3rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* line 14, ../sass/_base.scss */
-  body {
-    font-size: 12px;
-    font-size: 1.2rem;
+    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 
@@ -1004,7 +998,7 @@ body {
 /* line 96, ../sass/components/_container.scss */
 #preloader-screen span {
   width: 115px;
-  height: 115px;
+  height: 118px;
   display: inline-block;
   margin: -58px 0 0 -57px;
   top: 50%;
@@ -1022,10 +1016,6 @@ body {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-name: pulse;
   animation-name: pulse;
-}
-/* line 104, ../sass/components/_container.scss */
-.svg #preloader-screen span {
-  background: url("../images/wp-print.svg") left top no-repeat;
 }
 
 @-webkit-keyframes pulse {
@@ -1050,7 +1040,7 @@ body {
     transform: scale(1);
   }
 }
-/* line 133, ../sass/components/_container.scss */
+/* line 131, ../sass/components/_container.scss */
 .pulse {
   -webkit-animation-name: pulse;
   animation-name: pulse;
@@ -1516,7 +1506,7 @@ address {
 }
 /* line 10, ../sass/components/_global.scss */
 .white h1, .white h2, .white h3, .white h4, .white h5 {
-  color: #19629a;
+  color: #209dd5;
 }
 /* line 13, ../sass/components/_global.scss */
 .white h4, .white p {
@@ -1569,7 +1559,7 @@ address {
   filter: alpha(opacity=70);
 }
 
-/* line 53, ../sass/components/_global.scss */
+/* line 50, ../sass/components/_global.scss */
 section.page-title {
   background-color: white;
   height: 25%;
@@ -1581,30 +1571,30 @@ section.page-title {
   }*/
 }
 @media screen and (min-width: 661px) and (max-width: 1020px) {
-  /* line 53, ../sass/components/_global.scss */
+  /* line 50, ../sass/components/_global.scss */
   section.page-title {
     padding-top: 70px;
   }
 }
 @media screen and (max-width: 1020px) {
-  /* line 53, ../sass/components/_global.scss */
+  /* line 50, ../sass/components/_global.scss */
   section.page-title {
     height: 28%;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 53, ../sass/components/_global.scss */
+  /* line 50, ../sass/components/_global.scss */
   section.page-title {
     height: 134px;
   }
 }
-/* line 69, ../sass/components/_global.scss */
+/* line 66, ../sass/components/_global.scss */
 section.page-title .vcenter {
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 73, ../sass/components/_global.scss */
+/* line 70, ../sass/components/_global.scss */
 section.page-title .vcenter:before {
   content: "";
   display: inline-block;
@@ -1612,27 +1602,27 @@ section.page-title .vcenter:before {
   height: 100%;
   margin-right: -0.25em;
 }
-/* line 80, ../sass/components/_global.scss */
+/* line 77, ../sass/components/_global.scss */
 section.page-title .vcenter div {
   display: inline-block;
   width: 99%;
   vertical-align: middle;
   text-align: center;
 }
-/* line 91, ../sass/components/_global.scss */
+/* line 88, ../sass/components/_global.scss */
 #work-single section.page-title {
   height: 380px;
   background-color: #dcdcdc;
 }
 @media screen and (max-width: 660px) {
-  /* line 91, ../sass/components/_global.scss */
+  /* line 88, ../sass/components/_global.scss */
   #work-single section.page-title {
     height: 250px;
     top: 120px;
   }
 }
 
-/* line 101, ../sass/components/_global.scss */
+/* line 98, ../sass/components/_global.scss */
 section.banner {
   background-repeat: repeat-x;
   background-position: top left;
@@ -1642,6 +1632,10 @@ section.banner {
   overflow: hidden;
   background-color: #ccc;
   height: auto;
+}
+/* line 111, ../sass/components/_global.scss */
+.client-resources section.banner, .contact section.banner {
+  height: 50%;
 }
 
 /* line 115, ../sass/components/_global.scss */
@@ -1710,75 +1704,75 @@ section.banner {
   height: auto;
 }
 
-/* line 160, ../sass/components/_global.scss */
+/* line 161, ../sass/components/_global.scss */
 section.content {
   height: 25%;
   position: relative;
   overflow: visible;
 }
 @media screen and (max-width: 660px) {
-  /* line 160, ../sass/components/_global.scss */
+  /* line 161, ../sass/components/_global.scss */
   section.content {
     height: auto;
   }
 }
 @media screen and (max-width: 1020px) {
-  /* line 160, ../sass/components/_global.scss */
+  /* line 161, ../sass/components/_global.scss */
   section.content {
     height: 22%;
   }
 }
-/* line 173, ../sass/components/_global.scss */
+/* line 174, ../sass/components/_global.scss */
 section.content .column-wrap {
   padding: 2% 3%;
   width: 100%;
   height: 100%;
   display: block;
 }
-/* line 175, ../sass/components/_global.scss */
-.what-we-do section.content .column-wrap {
+/* line 176, ../sass/components/_global.scss */
+.what-we-do section.content .column-wrap, .client-resources section.content .column-wrap {
   padding: 0;
 }
 @media screen and (max-width: 1020px) {
-  /* line 173, ../sass/components/_global.scss */
+  /* line 174, ../sass/components/_global.scss */
   section.content .column-wrap {
     padding: 3%;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 173, ../sass/components/_global.scss */
+  /* line 174, ../sass/components/_global.scss */
   section.content .column-wrap {
     padding: 40px 5% 0;
   }
 }
-/* line 187, ../sass/components/_global.scss */
+/* line 188, ../sass/components/_global.scss */
 section.content .column-wrap div.column {
   display: block;
   height: 100%;
   float: left;
   width: 33.33%;
 }
-/* line 192, ../sass/components/_global.scss */
+/* line 193, ../sass/components/_global.scss */
 .what-we-do section.content .column-wrap div.column {
   width: 25%;
   text-align: center;
 }
-/* line 197, ../sass/components/_global.scss */
+/* line 198, ../sass/components/_global.scss */
 .what-we-do section.content .column-wrap div.column:nth-child(3n) figure img {
   margin-top: 3px;
 }
 @media screen and (max-width: 660px) {
-  /* line 192, ../sass/components/_global.scss */
+  /* line 193, ../sass/components/_global.scss */
   .what-we-do section.content .column-wrap div.column {
     width: 100%;
   }
-  /* line 204, ../sass/components/_global.scss */
+  /* line 205, ../sass/components/_global.scss */
   .what-we-do section.content .column-wrap div.column .inner {
     padding: 0;
     border: none;
   }
 }
-/* line 210, ../sass/components/_global.scss */
+/* line 211, ../sass/components/_global.scss */
 .what-we-do section.content .column-wrap div.column figure {
   width: auto;
   height: 60px;
@@ -1786,24 +1780,36 @@ section.content .column-wrap div.column {
   margin: 0 auto 20px;
 }
 @media screen and (min-width: 1020px) {
-  /* line 210, ../sass/components/_global.scss */
+  /* line 211, ../sass/components/_global.scss */
   .what-we-do section.content .column-wrap div.column figure {
     height: 70px;
   }
 }
 @media screen and (min-width: 1650px) {
-  /* line 210, ../sass/components/_global.scss */
+  /* line 211, ../sass/components/_global.scss */
   .what-we-do section.content .column-wrap div.column figure {
     height: 90px;
   }
 }
-/* line 221, ../sass/components/_global.scss */
+/* line 222, ../sass/components/_global.scss */
 .what-we-do section.content .column-wrap div.column figure img {
   display: inline-block;
   height: 100%;
   width: auto;
 }
-/* line 235, ../sass/components/_global.scss */
+/* line 236, ../sass/components/_global.scss */
+.client-resources section.content .column-wrap div.column {
+  width: 20%;
+  text-align: center;
+}
+@media screen and (max-width: 660px) {
+  /* line 236, ../sass/components/_global.scss */
+  .client-resources section.content .column-wrap div.column {
+    width: 100%;
+    border-top: 1px solid #5e91b8;
+  }
+}
+/* line 244, ../sass/components/_global.scss */
 section.content .column-wrap div.column .inner {
   padding: 3% 8%;
   width: 100%;
@@ -1811,80 +1817,92 @@ section.content .column-wrap div.column .inner {
   border-left: 2px solid #5e91b8;
   height: 100%;
 }
-/* line 237, ../sass/components/_global.scss */
-.what-we-do section.content .column-wrap div.column .inner {
+/* line 246, ../sass/components/_global.scss */
+.what-we-do section.content .column-wrap div.column .inner, .client-resources section.content .column-wrap div.column .inner {
   padding: 6% 8% 3%;
   -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
-/* line 241, ../sass/components/_global.scss */
-.what-we-do section.content .column-wrap div.column .inner:hover, .what-we-do section.content .column-wrap div.column .inner:active {
+/* line 250, ../sass/components/_global.scss */
+.what-we-do section.content .column-wrap div.column .inner:hover, .what-we-do section.content .column-wrap div.column .inner:active, .client-resources section.content .column-wrap div.column .inner:hover, .client-resources section.content .column-wrap div.column .inner:active {
   background-color: #155484;
 }
 @media screen and (max-width: 1650px) {
-  /* line 235, ../sass/components/_global.scss */
+  /* line 244, ../sass/components/_global.scss */
   section.content .column-wrap div.column .inner {
     padding: 3% 6%;
   }
-  /* line 252, ../sass/components/_global.scss */
-  .what-we-do section.content .column-wrap div.column .inner {
+  /* line 264, ../sass/components/_global.scss */
+  .what-we-do section.content .column-wrap div.column .inner, .client-resources section.content .column-wrap div.column .inner {
     padding: 8% 6% 3%;
   }
 }
 @media screen and (max-width: 1020px) {
-  /* line 235, ../sass/components/_global.scss */
+  /* line 244, ../sass/components/_global.scss */
   section.content .column-wrap div.column .inner {
     padding: 2% 4%;
   }
-  /* line 258, ../sass/components/_global.scss */
-  .what-we-do section.content .column-wrap div.column .inner {
+  /* line 270, ../sass/components/_global.scss */
+  .what-we-do section.content .column-wrap div.column .inner, .client-resources section.content .column-wrap div.column .inner {
     padding: 5% 4%;
+  }
+  /* line 273, ../sass/components/_global.scss */
+  .client-resources section.content .column-wrap div.column .inner {
+    padding: 8% 4% 8%;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 235, ../sass/components/_global.scss */
+  /* line 244, ../sass/components/_global.scss */
   section.content .column-wrap div.column .inner {
     padding: 5% 4%;
   }
-  /* line 264, ../sass/components/_global.scss */
-  .what-we-do section.content .column-wrap div.column .inner {
+  /* line 279, ../sass/components/_global.scss */
+  .what-we-do section.content .column-wrap div.column .inner, .client-resources section.content .column-wrap div.column .inner {
     border-left: 0;
     border-top: 1px solid #5e91b8;
   }
+  /* line 283, ../sass/components/_global.scss */
+  .client-resources section.content .column-wrap div.column .inner {
+    border-top: none;
+  }
 }
-/* line 271, ../sass/components/_global.scss */
+/* line 289, ../sass/components/_global.scss */
 section.content .column-wrap div.column:first-child .inner {
   padding-left: 0;
   border: none;
 }
-/* line 273, ../sass/components/_global.scss */
-.what-we-do section.content .column-wrap div.column:first-child .inner {
+/* line 291, ../sass/components/_global.scss */
+.what-we-do section.content .column-wrap div.column:first-child .inner, .client-resources section.content .column-wrap div.column:first-child .inner {
   padding-left: 8%;
 }
 @media screen and (max-width: 660px) {
-  /* line 271, ../sass/components/_global.scss */
+  /* line 289, ../sass/components/_global.scss */
   section.content .column-wrap div.column:first-child .inner {
     border-left: 1px solid rgba(255, 255, 255, 0.6);
     padding-left: 8%;
   }
-  /* line 281, ../sass/components/_global.scss */
+  /* line 299, ../sass/components/_global.scss */
   .what-we-do section.content .column-wrap div.column:first-child .inner {
     padding-left: 0;
     border: none;
   }
+  /* line 303, ../sass/components/_global.scss */
+  .client-resources section.content .column-wrap div.column:first-child .inner {
+    border-left: 0;
+  }
 }
-/* line 289, ../sass/components/_global.scss */
+/* line 310, ../sass/components/_global.scss */
 section.content .column-wrap div.column:last-child .inner {
   padding-right: 0;
 }
-/* line 291, ../sass/components/_global.scss */
-.what-we-do section.content .column-wrap div.column:last-child .inner {
+/* line 312, ../sass/components/_global.scss */
+.what-we-do section.content .column-wrap div.column:last-child .inner, .client-resources section.content .column-wrap div.column:last-child .inner {
   padding-right: 8%;
 }
 @media screen and (max-width: 660px) {
-  /* line 187, ../sass/components/_global.scss */
+  /* line 188, ../sass/components/_global.scss */
   section.content .column-wrap div.column {
     width: 100%;
     float: none;
@@ -1892,22 +1910,39 @@ section.content .column-wrap div.column:last-child .inner {
     padding: 1% 10% 1px;
     height: auto;
   }
-  /* line 301, ../sass/components/_global.scss */
+  /* line 322, ../sass/components/_global.scss */
+  .client-resources section.content .column-wrap div.column {
+    margin-bottom: 0;
+    padding: 0;
+  }
+  /* line 326, ../sass/components/_global.scss */
   .what-we-do section.content .column-wrap div.column {
     padding: 0;
     margin-bottom: 0;
   }
 }
-/* line 307, ../sass/components/_global.scss */
+/* line 332, ../sass/components/_global.scss */
 section.content .column-wrap div.column p {
+  margin-bottom: 20px;
+}
+/* line 334, ../sass/components/_global.scss */
+.client-resources section.content .column-wrap div.column p {
+  margin-bottom: 20px;
+}
+/* line 336, ../sass/components/_global.scss */
+.client-resources section.content .column-wrap div.column p:last-child {
   margin-bottom: 0;
 }
-/* line 312, ../sass/components/_global.scss */
+/* line 340, ../sass/components/_global.scss */
+section.content .column-wrap div.column p:last-child {
+  margin-bottom: 0;
+}
+/* line 346, ../sass/components/_global.scss */
 .scrollable section.content {
   height: auto;
 }
 
-/* line 316, ../sass/components/_global.scss */
+/* line 350, ../sass/components/_global.scss */
 .button {
   height: 48px;
   line-height: 48px;
@@ -1923,18 +1958,62 @@ section.content .column-wrap div.column p {
   font-size: 16px;
   font-size: 1.6rem;
 }
+/* line 356, ../sass/components/_global.scss */
+.client-resources .button {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 51px 0 16px;
+}
 @media screen and (max-width: 1650px) {
-  /* line 316, ../sass/components/_global.scss */
+  /* line 356, ../sass/components/_global.scss */
+  .client-resources .button {
+    padding: 0 10px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    height: 30px;
+    line-height: 30px;
+  }
+  /* line 362, ../sass/components/_global.scss */
+  .client-resources .button h3 {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  /* line 369, ../sass/components/_global.scss */
+  .client-resources .button:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 1020px) {
+  /* line 356, ../sass/components/_global.scss */
+  .client-resources .button {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 356, ../sass/components/_global.scss */
+  .client-resources .button {
+    font-size: 11px;
+    font-size: 1.1rem;
+    padding: 0 5px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 660px) {
+  /* line 356, ../sass/components/_global.scss */
+  .client-resources .button {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 1650px) {
+  /* line 350, ../sass/components/_global.scss */
   .button {
-    font-size: 14px;
-    font-size: 1.4rem;
     padding: 0 66px 0 16px;
     height: 42px;
     line-height: 42px;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 316, ../sass/components/_global.scss */
+  /* line 350, ../sass/components/_global.scss */
   .button {
     padding: 0 51px 0 15px;
     height: 40px;
@@ -1943,7 +2022,7 @@ section.content .column-wrap div.column p {
     font-size: 1.4rem;
   }
 }
-/* line 341, ../sass/components/_global.scss */
+/* line 405, ../sass/components/_global.scss */
 .caption .button {
   height: 66px;
   line-height: 66px;
@@ -1959,7 +2038,7 @@ section.content .column-wrap div.column p {
   filter: none;
 }
 @media screen and (max-width: 1650px) {
-  /* line 341, ../sass/components/_global.scss */
+  /* line 405, ../sass/components/_global.scss */
   .caption .button {
     height: 52px;
     line-height: 52px;
@@ -1967,7 +2046,7 @@ section.content .column-wrap div.column p {
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 341, ../sass/components/_global.scss */
+  /* line 405, ../sass/components/_global.scss */
   .caption .button {
     padding: 0 51px 0 15px;
     height: 40px;
@@ -1976,7 +2055,7 @@ section.content .column-wrap div.column p {
     font-size: 1.4rem;
   }
 }
-/* line 357, ../sass/components/_global.scss */
+/* line 421, ../sass/components/_global.scss */
 .caption .button:hover, .caption .button:active {
   background-color: black;
   background-color: transparent\9;
@@ -1988,16 +2067,16 @@ section.content .column-wrap div.column p {
 .caption .button:hover:nth-child(n), .caption .button:active:nth-child(n) {
   filter: none;
 }
-/* line 361, ../sass/components/_global.scss */
+/* line 425, ../sass/components/_global.scss */
 figcaption .button {
   font-size: 12px;
   font-size: 1.2rem;
 }
-/* line 363, ../sass/components/_global.scss */
+/* line 427, ../sass/components/_global.scss */
 figcaption .button:hover, figcaption .button:active {
   background-color: transparent;
 }
-/* line 367, ../sass/components/_global.scss */
+/* line 431, ../sass/components/_global.scss */
 .button:after {
   content: "";
   display: block;
@@ -2011,12 +2090,19 @@ figcaption .button:hover, figcaption .button:active {
   position: absolute;
   margin-top: -6px;
 }
-/* line 373, ../sass/components/_global.scss */
+/* line 437, ../sass/components/_global.scss */
+.client-resources .button:after {
+  width: 26px;
+  height: 9px;
+  background-size: 100% auto;
+  margin-top: -4px;
+}
+/* line 443, ../sass/components/_global.scss */
 .enlightenment .button:after {
   background: none;
 }
 @media screen and (max-width: 660px) {
-  /* line 367, ../sass/components/_global.scss */
+  /* line 431, ../sass/components/_global.scss */
   .button:after {
     right: 11px;
     width: 30px;
@@ -2024,24 +2110,24 @@ figcaption .button:hover, figcaption .button:active {
     background-size: 30px 11px;
   }
 }
-/* line 385, ../sass/components/_global.scss */
+/* line 455, ../sass/components/_global.scss */
 .button:hover, .button:active {
   background-color: rgba(0, 0, 0, 0.15);
 }
-/* line 387, ../sass/components/_global.scss */
+/* line 457, ../sass/components/_global.scss */
 .enlightenment .button:hover, .enlightenment .button:active {
   background-color: white;
   border-color: black;
   color: black !important;
 }
-/* line 393, ../sass/components/_global.scss */
+/* line 463, ../sass/components/_global.scss */
 .enlightenment .button {
   border-color: #605959;
   color: #605959 !important;
   padding: 0 21px;
 }
 
-/* line 400, ../sass/components/_global.scss */
+/* line 470, ../sass/components/_global.scss */
 .underline:after {
   content: "";
   display: block;
@@ -2051,34 +2137,34 @@ figcaption .button:hover, figcaption .button:active {
   margin: 25px auto 0;
 }
 @media screen and (max-width: 1650px) {
-  /* line 400, ../sass/components/_global.scss */
+  /* line 470, ../sass/components/_global.scss */
   .underline:after {
     margin: 20px auto 0;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 400, ../sass/components/_global.scss */
+  /* line 470, ../sass/components/_global.scss */
   .underline:after {
     margin: 15px auto 0;
     width: 35px;
   }
 }
-/* line 414, ../sass/components/_global.scss */
+/* line 484, ../sass/components/_global.scss */
 .caption .underline:after {
   margin: 38px auto 40px;
 }
 @media screen and (max-width: 660px) {
-  /* line 414, ../sass/components/_global.scss */
+  /* line 484, ../sass/components/_global.scss */
   .caption .underline:after {
     margin: 25px auto 37px;
   }
 }
-/* line 420, ../sass/components/_global.scss */
+/* line 490, ../sass/components/_global.scss */
 .white .underline:after {
   background-color: #209dd5;
 }
 
-/* line 425, ../sass/components/_global.scss */
+/* line 495, ../sass/components/_global.scss */
 .tooltip-pointer {
   display: inline-block;
   z-index: 9999;
@@ -2099,7 +2185,7 @@ figcaption .button:hover, figcaption .button:active {
   left: 0;
   position: absolute;
 }
-/* line 439, ../sass/components/_global.scss */
+/* line 509, ../sass/components/_global.scss */
 .tooltip-pointer:after {
   content: "";
   width: 16px;
@@ -2111,6 +2197,39 @@ figcaption .button:hover, figcaption .button:active {
   position: absolute;
   margin-left: -8px;
   background: url("../images/tooltip-pointer.png") center top no-repeat;
+}
+
+/* line 518, ../sass/components/_global.scss */
+a.close {
+  display: block;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  background: #19629a url("../images/close.png") center center no-repeat;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  z-index: 998;
+}
+/* line 528, ../sass/components/_global.scss */
+a.close:hover, a.close:active {
+  opacity: 1;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  filter: alpha(opacity=100);
+}
+@media screen and (max-width: 1650px) {
+  /* line 518, ../sass/components/_global.scss */
+  a.close {
+    width: 40px;
+    height: 40px;
+    background-size: 16px 16px;
+  }
 }
 
 /* line 1, ../sass/components/_forms.scss */
@@ -2629,45 +2748,13 @@ nav#sectors {
     height: auto;
   }
 }
-/* line 8, ../sass/templates/_what-we-do.scss */
-nav#sectors a.close {
-  display: block;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  -webkit-transition: none;
-  -moz-transition: none;
-  transition: none;
-  background: #19629a url("../images/close.png") center center no-repeat;
-  top: 0;
-  right: 0;
-  bottom: auto;
-  left: auto;
-  position: absolute;
-  z-index: 998;
-}
-/* line 18, ../sass/templates/_what-we-do.scss */
-nav#sectors a.close:hover, nav#sectors a.close:active {
-  opacity: 1;
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  filter: alpha(opacity=100);
-}
-@media screen and (max-width: 1650px) {
-  /* line 8, ../sass/templates/_what-we-do.scss */
-  nav#sectors a.close {
-    width: 40px;
-    height: 40px;
-    background-size: 16px 16px;
-  }
-}
-/* line 28, ../sass/templates/_what-we-do.scss */
+/* line 9, ../sass/templates/_what-we-do.scss */
 nav#sectors .underline:after {
   width: 30px;
   margin: 20px auto 0;
 }
 @media screen and (max-width: 1650px) {
-  /* line 28, ../sass/templates/_what-we-do.scss */
+  /* line 9, ../sass/templates/_what-we-do.scss */
   nav#sectors .underline:after {
     top: auto;
     right: auto;
@@ -2677,7 +2764,7 @@ nav#sectors .underline:after {
     margin-left: -15px;
   }
 }
-/* line 37, ../sass/templates/_what-we-do.scss */
+/* line 18, ../sass/templates/_what-we-do.scss */
 nav#sectors ul {
   z-index: 999;
   position: relative;
@@ -2685,7 +2772,7 @@ nav#sectors ul {
   height: 100%;
   display: block;
 }
-/* line 45, ../sass/templates/_what-we-do.scss */
+/* line 26, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item {
   width: 100%;
   display: block;
@@ -2698,31 +2785,31 @@ nav#sectors ul li.item {
   left: 0;
   position: absolute;
 }
-/* line 52, ../sass/templates/_what-we-do.scss */
+/* line 33, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item .handle, nav#sectors ul li.item .main, nav#sectors ul li.item aside {
   float: left;
 }
 @media screen and (max-width: 660px) {
-  /* line 52, ../sass/templates/_what-we-do.scss */
+  /* line 33, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .handle, nav#sectors ul li.item .main, nav#sectors ul li.item aside {
     float: none;
     text-align: center;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 45, ../sass/templates/_what-we-do.scss */
+  /* line 26, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item {
     position: relative;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 62, ../sass/templates/_what-we-do.scss */
+  /* line 43, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .button {
     display: inline-block;
     margin: 0 auto;
   }
 }
-/* line 68, ../sass/templates/_what-we-do.scss */
+/* line 49, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item .handle {
   -webkit-transition: background-color 0.3s ease-in-out;
   -moz-transition: background-color 0.3s ease-in-out;
@@ -2732,20 +2819,20 @@ nav#sectors ul li.item .handle {
   height: 100%;
   padding: 0 15px;
 }
-/* line 74, ../sass/templates/_what-we-do.scss */
+/* line 55, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item .handle:last-child {
   border-right: none;
 }
-/* line 77, ../sass/templates/_what-we-do.scss */
+/* line 58, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item .handle.hover {
   cursor: pointer;
 }
-/* line 79, ../sass/templates/_what-we-do.scss */
+/* line 60, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item .handle.hover:hover, nav#sectors ul li.item .handle.hover:active {
   background-color: #155484;
 }
 @media screen and (max-width: 660px) {
-  /* line 68, ../sass/templates/_what-we-do.scss */
+  /* line 49, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .handle {
     width: 100%;
     height: 200px;
@@ -2754,7 +2841,7 @@ nav#sectors ul li.item .handle.hover:hover, nav#sectors ul li.item .handle.hover
     border-right: none;
   }
 }
-/* line 90, ../sass/templates/_what-we-do.scss */
+/* line 71, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item .handle div {
   position: relative;
   top: 50%;
@@ -2766,24 +2853,24 @@ nav#sectors ul li.item .handle div {
   position: relative;
 }
 @media screen and (max-width: 1650px) {
-  /* line 90, ../sass/templates/_what-we-do.scss */
+  /* line 71, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .handle div {
     padding-top: 52px;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 90, ../sass/templates/_what-we-do.scss */
+  /* line 71, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .handle div {
     padding-top: 95px;
   }
 }
-/* line 102, ../sass/templates/_what-we-do.scss */
+/* line 83, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item .handle div h3 {
   margin: 30px 0 10px;
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 104, ../sass/templates/_what-we-do.scss */
+/* line 85, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item .handle div h3 span {
   position: relative;
   top: 50%;
@@ -2792,14 +2879,14 @@ nav#sectors ul li.item .handle div h3 span {
   transform: translateY(-50%);
 }
 @media screen and (max-width: 1650px) {
-  /* line 102, ../sass/templates/_what-we-do.scss */
+  /* line 83, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .handle div h3 {
     height: 60px;
     margin: 0;
     font-size: 16px;
     font-size: 1.6rem;
   }
-  /* line 112, ../sass/templates/_what-we-do.scss */
+  /* line 93, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .handle div h3 span {
     display: block;
     position: relative;
@@ -2810,12 +2897,12 @@ nav#sectors ul li.item .handle div h3 span {
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 102, ../sass/templates/_what-we-do.scss */
+  /* line 83, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .handle div h3 {
     margin-bottom: 2px;
   }
 }
-/* line 126, ../sass/templates/_what-we-do.scss */
+/* line 107, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item .handle div img {
   width: 88px;
   height: 88px;
@@ -2828,60 +2915,60 @@ nav#sectors ul li.item .handle div img {
   margin-left: -44px;
 }
 @media screen and (max-width: 660px) {
-  /* line 126, ../sass/templates/_what-we-do.scss */
+  /* line 107, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .handle div img {
     margin-top: 10px;
   }
 }
 @media screen and (min-width: 661px) and (max-width: 1650px) {
-  /* line 126, ../sass/templates/_what-we-do.scss */
+  /* line 107, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .handle div img {
     width: 60px;
     height: 60px;
     margin-left: -30px;
   }
 }
-/* line 143, ../sass/templates/_what-we-do.scss */
+/* line 124, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item.item-2 {
   left: 20%;
 }
 @media screen and (max-width: 660px) {
-  /* line 143, ../sass/templates/_what-we-do.scss */
+  /* line 124, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item.item-2 {
     left: 0;
   }
 }
-/* line 149, ../sass/templates/_what-we-do.scss */
+/* line 130, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item.item-3 {
   left: 40%;
 }
 @media screen and (max-width: 660px) {
-  /* line 149, ../sass/templates/_what-we-do.scss */
+  /* line 130, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item.item-3 {
     left: 0;
   }
 }
-/* line 155, ../sass/templates/_what-we-do.scss */
+/* line 136, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item.item-4 {
   left: 60%;
 }
 @media screen and (max-width: 660px) {
-  /* line 155, ../sass/templates/_what-we-do.scss */
+  /* line 136, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item.item-4 {
     left: 0;
   }
 }
-/* line 161, ../sass/templates/_what-we-do.scss */
+/* line 142, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item.item-5 {
   left: 80%;
 }
 @media screen and (max-width: 660px) {
-  /* line 161, ../sass/templates/_what-we-do.scss */
+  /* line 142, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item.item-5 {
     left: 0;
   }
 }
-/* line 167, ../sass/templates/_what-we-do.scss */
+/* line 148, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item .main, nav#sectors ul li.item aside {
   width: 60%;
   height: 100%;
@@ -2890,7 +2977,7 @@ nav#sectors ul li.item .main, nav#sectors ul li.item aside {
   border-left: 1px solid white;
 }
 @media screen and (min-width: 661px) {
-  /* line 167, ../sass/templates/_what-we-do.scss */
+  /* line 148, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .main, nav#sectors ul li.item aside {
     opacity: 0;
     -moz-opacity: 0;
@@ -2899,7 +2986,7 @@ nav#sectors ul li.item .main, nav#sectors ul li.item aside {
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 167, ../sass/templates/_what-we-do.scss */
+  /* line 148, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item .main, nav#sectors ul li.item aside {
     display: none;
     width: 100%;
@@ -2907,18 +2994,18 @@ nav#sectors ul li.item .main, nav#sectors ul li.item aside {
     border: 0;
   }
 }
-/* line 184, ../sass/templates/_what-we-do.scss */
+/* line 165, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item aside {
   width: 20%;
 }
 @media screen and (max-width: 660px) {
-  /* line 184, ../sass/templates/_what-we-do.scss */
+  /* line 165, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item aside {
     width: 100%;
     border-bottom: 1px solid white;
   }
 }
-/* line 191, ../sass/templates/_what-we-do.scss */
+/* line 172, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item aside ul li {
   padding-left: 30px;
   margin-bottom: 10px;
@@ -2926,18 +3013,18 @@ nav#sectors ul li.item aside ul li {
   line-height: 120%;
 }
 @media screen and (max-width: 1650px) {
-  /* line 191, ../sass/templates/_what-we-do.scss */
+  /* line 172, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item aside ul li {
     padding-left: 20px;
   }
 }
-/* line 199, ../sass/templates/_what-we-do.scss */
+/* line 180, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item aside ul li span {
   display: block;
   position: relative;
 }
 @media screen and (max-width: 660px) {
-  /* line 199, ../sass/templates/_what-we-do.scss */
+  /* line 180, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item aside ul li span {
     display: inline-block;
     margin: 0 auto;
@@ -2945,7 +3032,7 @@ nav#sectors ul li.item aside ul li span {
     line-height: 16px;
   }
 }
-/* line 208, ../sass/templates/_what-we-do.scss */
+/* line 189, ../sass/templates/_what-we-do.scss */
 nav#sectors ul li.item aside ul li span:before {
   content: "";
   width: 15px;
@@ -2959,7 +3046,7 @@ nav#sectors ul li.item aside ul li span:before {
   position: absolute;
 }
 @media screen and (min-width: 661px) and (max-width: 1650px) {
-  /* line 208, ../sass/templates/_what-we-do.scss */
+  /* line 189, ../sass/templates/_what-we-do.scss */
   nav#sectors ul li.item aside ul li span:before {
     width: 11px;
     height: 12px;
@@ -3888,7 +3975,7 @@ footer#posts-footer a.more-posts.end {
 @media screen and (max-width: 1020px) {
   /* line 1, ../sass/templates/_testimonials.scss */
   #testimonials {
-    height: 68%;
+    height: 73%;
   }
 }
 @media screen and (max-width: 660px) {
@@ -3906,21 +3993,31 @@ footer#posts-footer a.more-posts.end {
   text-align: center;
   text-align: center;
 }
+@media screen and (max-width: 660px) {
+  /* line 11, ../sass/templates/_testimonials.scss */
+  #testimonials .logo {
+    height: 44px;
+  }
+}
 @media screen and (min-width: 1651px) {
   /* line 11, ../sass/templates/_testimonials.scss */
   #testimonials .logo {
     height: 94px;
   }
 }
-/* line 21, ../sass/templates/_testimonials.scss */
+/* line 24, ../sass/templates/_testimonials.scss */
 #testimonials .logo img {
   width: auto;
   height: 100%;
   margin: 0 auto;
   display: inline-block;
 }
+/* line 31, ../sass/templates/_testimonials.scss */
+#testimonials a.close {
+  z-index: 9999;
+}
 
-/* line 29, ../sass/templates/_testimonials.scss */
+/* line 36, ../sass/templates/_testimonials.scss */
 ul#testimonial-clients, #testimonial-slider {
   top: 0;
   right: 0;
@@ -3930,15 +4027,35 @@ ul#testimonial-clients, #testimonial-slider {
   display: block;
 }
 
-/* line 33, ../sass/templates/_testimonials.scss */
+@media screen and (max-width: 660px) {
+  /* line 40, ../sass/templates/_testimonials.scss */
+  ul#testimonials-clients {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+}
+
+/* line 49, ../sass/templates/_testimonials.scss */
 ul#testimonial-clients {
-  z-index: 998;
+  z-index: 1000;
   border: 1px solid #cdcdcd;
   border-bottom: 0;
   border-right: 0;
-  display: none;
 }
-/* line 39, ../sass/templates/_testimonials.scss */
+@media screen and (max-width: 660px) {
+  /* line 49, ../sass/templates/_testimonials.scss */
+  ul#testimonial-clients {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+}
+/* line 63, ../sass/templates/_testimonials.scss */
 ul#testimonial-clients li {
   width: 33.33%;
   height: 50%;
@@ -3946,106 +4063,133 @@ ul#testimonial-clients li {
   float: left;
   position: relative;
 }
+@media screen and (max-width: 660px) {
+  /* line 63, ../sass/templates/_testimonials.scss */
+  ul#testimonial-clients li {
+    width: 50%;
+    height: auto;
+  }
+  /* line 68, ../sass/templates/_testimonials.scss */
+  ul#testimonial-clients li:before {
+    display: block;
+    content: "";
+    padding-top: 100%;
+  }
+}
 @media screen and (max-width: 768px) and (min-height: 1000px) {
-  /* line 39, ../sass/templates/_testimonials.scss */
+  /* line 63, ../sass/templates/_testimonials.scss */
   ul#testimonial-clients li {
     width: 50%;
     height: 33.33%;
   }
 }
-@media screen and (max-width: 660px) {
-  /* line 39, ../sass/templates/_testimonials.scss */
-  ul#testimonial-clients li {
-    height: 220px;
-    width: 100%;
-    float: none;
-  }
-}
-/* line 59, ../sass/templates/_testimonials.scss */
-ul#testimonial-clients li a {
+/* line 83, ../sass/templates/_testimonials.scss */
+ul#testimonial-clients li a.client {
   width: 100%;
   height: 100%;
+  cursor: pointer;
   display: block;
   border: 1px solid #cdcdcd;
   border-top: 0;
   border-left: 0;
+  background-color: #e6e6e6;
   -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 67, ../sass/templates/_testimonials.scss */
-ul#testimonial-clients li a:before {
+@media screen and (max-width: 660px) {
+  /* line 83, ../sass/templates/_testimonials.scss */
+  ul#testimonial-clients li a.client {
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    position: absolute;
+  }
+}
+/* line 96, ../sass/templates/_testimonials.scss */
+ul#testimonial-clients li a.client:before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 73, ../sass/templates/_testimonials.scss */
-ul#testimonial-clients li a:link, ul#testimonial-clients li a:visited {
-  background-color: #e6e6e6;
-}
-/* line 76, ../sass/templates/_testimonials.scss */
-ul#testimonial-clients li a:hover, ul#testimonial-clients li a:active {
+/* line 102, ../sass/templates/_testimonials.scss */
+ul#testimonial-clients li a.client:hover, ul#testimonial-clients li a.client:active {
   background-color: white;
 }
 
-/* line 82, ../sass/templates/_testimonials.scss */
+/* line 108, ../sass/templates/_testimonials.scss */
 #testimonial-slider {
-  z-index: 999;
+  z-index: 1001;
   margin-bottom: 0 !important;
   background-color: #e6e6e6;
 }
-/* line 86, ../sass/templates/_testimonials.scss */
+/* line 113, ../sass/templates/_testimonials.scss */
 #testimonial-slider .slick-list, #testimonial-slider .slick-slide {
   width: 100%;
   height: 100%;
   display: block;
 }
-/* line 91, ../sass/templates/_testimonials.scss */
+/* line 118, ../sass/templates/_testimonials.scss */
 #testimonial-slider .slick-track {
   height: 100%;
   display: block;
 }
-/* line 95, ../sass/templates/_testimonials.scss */
+/* line 122, ../sass/templates/_testimonials.scss */
 #testimonial-slider .slick-slide {
   text-align: center;
 }
-/* line 99, ../sass/templates/_testimonials.scss */
+/* line 126, ../sass/templates/_testimonials.scss */
 #testimonial-slider .slick-slide:before {
   content: "";
   height: 100%;
   display: inline-block;
   vertical-align: middle;
 }
-/* line 105, ../sass/templates/_testimonials.scss */
+/* line 132, ../sass/templates/_testimonials.scss */
 #testimonial-slider .slick-slide .vcenter {
   vertical-align: middle;
   display: inline-block;
   width: 99%;
 }
-/* line 110, ../sass/templates/_testimonials.scss */
+/* line 137, ../sass/templates/_testimonials.scss */
 #testimonial-slider .slick-slide header {
   margin-bottom: 40px;
 }
-/* line 113, ../sass/templates/_testimonials.scss */
+/* line 140, ../sass/templates/_testimonials.scss */
 #testimonial-slider .slick-slide blockquote {
   width: 100%;
   padding: 0 10%;
 }
-/* line 116, ../sass/templates/_testimonials.scss */
+/* line 143, ../sass/templates/_testimonials.scss */
 #testimonial-slider .slick-slide blockquote p {
   font-size: 30px;
   font-size: 3rem;
   line-height: 120%;
   color: #209dd5;
 }
-/* line 121, ../sass/templates/_testimonials.scss */
+@media screen and (max-width: 660px) {
+  /* line 143, ../sass/templates/_testimonials.scss */
+  #testimonial-slider .slick-slide blockquote p {
+    font-size: 18px;
+    font-size: 1.8rem;
+  }
+}
+/* line 151, ../sass/templates/_testimonials.scss */
 #testimonial-slider .slick-slide blockquote footer {
   font-size: 20px;
   font-size: 2rem;
   color: #209dd5;
 }
-/* line 127, ../sass/templates/_testimonials.scss */
+@media screen and (max-width: 660px) {
+  /* line 151, ../sass/templates/_testimonials.scss */
+  #testimonial-slider .slick-slide blockquote footer {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+}
+/* line 160, ../sass/templates/_testimonials.scss */
 #testimonial-slider .slick-dots {
   top: auto;
   right: auto;
@@ -4053,27 +4197,42 @@ ul#testimonial-clients li a:hover, ul#testimonial-clients li a:active {
   left: 0;
   position: absolute;
   width: 100%;
+  text-align: center;
 }
-/* line 130, ../sass/templates/_testimonials.scss */
+/* line 164, ../sass/templates/_testimonials.scss */
 #testimonial-slider .slick-dots li {
-  margin: 0;
+  display: inline-block;
+  margin: 0 5px;
 }
-/* line 133, ../sass/templates/_testimonials.scss */
-#testimonial-slider .slick-dots li button:before {
-  font-size: 30px;
-  font-size: 3rem;
-  color: #209dd5;
+/* line 167, ../sass/templates/_testimonials.scss */
+#testimonial-slider .slick-dots li button {
+  width: 9px;
+  height: 9px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  opacity: 0.6;
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  filter: alpha(opacity=60);
+  border: none;
+  background-color: #209dd5;
+  padding: 0;
+  text-indent: -1000px;
+  outline: none;
+}
+/* line 179, ../sass/templates/_testimonials.scss */
+#testimonial-slider .slick-dots li.slick-active button {
   opacity: 1;
   -moz-opacity: 1;
   -khtml-opacity: 1;
   filter: alpha(opacity=100);
 }
-/* line 141, ../sass/templates/_testimonials.scss */
-#testimonial-slider .slick-dots li.slick-active button:before {
-  color: #19629a;
-}
 
-/* line 152, ../sass/templates/_testimonials.scss */
+/* line 189, ../sass/templates/_testimonials.scss */
 #work-single .page-title {
   position: fixed;
   width: 100%;
@@ -4087,25 +4246,25 @@ ul#testimonial-clients li a:hover, ul#testimonial-clients li a:active {
       	*/
   z-index: 997;
 }
-/* line 170, ../sass/templates/_testimonials.scss */
+/* line 207, ../sass/templates/_testimonials.scss */
 #work-single .page-title .vcenter {
   position: relative;
   width: 100%;
   height: 380px;
 }
 @media screen and (max-width: 1020px) {
-  /* line 170, ../sass/templates/_testimonials.scss */
+  /* line 207, ../sass/templates/_testimonials.scss */
   #work-single .page-title .vcenter {
     height: 310px;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 170, ../sass/templates/_testimonials.scss */
+  /* line 207, ../sass/templates/_testimonials.scss */
   #work-single .page-title .vcenter {
     height: 250px;
   }
 }
-/* line 180, ../sass/templates/_testimonials.scss */
+/* line 217, ../sass/templates/_testimonials.scss */
 #work-single .page-title .vcenter:before {
   content: "";
   display: inline-block;
@@ -4113,7 +4272,7 @@ ul#testimonial-clients li a:hover, ul#testimonial-clients li a:active {
   height: 100%;
   margin-right: -0.25em;
 }
-/* line 187, ../sass/templates/_testimonials.scss */
+/* line 224, ../sass/templates/_testimonials.scss */
 #work-single .page-title .vcenter div {
   display: inline-block;
   width: 99%;
@@ -4121,57 +4280,57 @@ ul#testimonial-clients li a:hover, ul#testimonial-clients li a:active {
   padding-left: 240px;
 }
 @media screen and (max-width: 1650px) {
-  /* line 187, ../sass/templates/_testimonials.scss */
+  /* line 224, ../sass/templates/_testimonials.scss */
   #work-single .page-title .vcenter div {
     padding-left: 200px;
   }
 }
 @media screen and (max-width: 1020px) {
-  /* line 187, ../sass/templates/_testimonials.scss */
+  /* line 224, ../sass/templates/_testimonials.scss */
   #work-single .page-title .vcenter div {
     padding-left: 48px;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 187, ../sass/templates/_testimonials.scss */
+  /* line 224, ../sass/templates/_testimonials.scss */
   #work-single .page-title .vcenter div {
     padding-left: 0;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 152, ../sass/templates/_testimonials.scss */
+  /* line 189, ../sass/templates/_testimonials.scss */
   #work-single .page-title {
     position: relative;
     left: auto;
     top: auto;
   }
 }
-/* line 213, ../sass/templates/_testimonials.scss */
+/* line 250, ../sass/templates/_testimonials.scss */
 #work-single .page-title h1 {
   width: 45%;
   max-width: 420px;
   display: inline-block;
 }
-/* line 217, ../sass/templates/_testimonials.scss */
+/* line 254, ../sass/templates/_testimonials.scss */
 #work-single .page-title h1 img {
   width: 100%;
   height: auto;
 }
 @media screen and (max-width: 1650px) {
-  /* line 213, ../sass/templates/_testimonials.scss */
+  /* line 250, ../sass/templates/_testimonials.scss */
   #work-single .page-title h1 {
     width: 30%;
     min-width: 300px;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 213, ../sass/templates/_testimonials.scss */
+  /* line 250, ../sass/templates/_testimonials.scss */
   #work-single .page-title h1 {
     width: 30%;
     min-width: 250px;
   }
 }
-/* line 230, ../sass/templates/_testimonials.scss */
+/* line 267, ../sass/templates/_testimonials.scss */
 #work-single .content {
   margin-top: 310px;
   /* @media screen and (min-height: 1000px){
@@ -4189,88 +4348,88 @@ ul#testimonial-clients li a:hover, ul#testimonial-clients li a:active {
   z-index: 998;
 }
 @media screen and (max-width: 660px) {
-  /* line 230, ../sass/templates/_testimonials.scss */
+  /* line 267, ../sass/templates/_testimonials.scss */
   #work-single .content {
     margin-top: 120px;
   }
 }
-/* line 248, ../sass/templates/_testimonials.scss */
+/* line 285, ../sass/templates/_testimonials.scss */
 #work-single .content .intro {
   padding: 6% 12%;
   text-align: center;
 }
-/* line 250, ../sass/templates/_testimonials.scss */
+/* line 287, ../sass/templates/_testimonials.scss */
 #work-single .content .intro p:last-child {
   margin-bottom: 0;
 }
 @media screen and (max-width: 1650px) {
-  /* line 248, ../sass/templates/_testimonials.scss */
+  /* line 285, ../sass/templates/_testimonials.scss */
   #work-single .content .intro {
     padding: 5% 15%;
   }
 }
 @media screen and (max-width: 1020px) {
-  /* line 248, ../sass/templates/_testimonials.scss */
+  /* line 285, ../sass/templates/_testimonials.scss */
   #work-single .content .intro {
     padding: 4% 8%;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 248, ../sass/templates/_testimonials.scss */
+  /* line 285, ../sass/templates/_testimonials.scss */
   #work-single .content .intro {
     padding: 30px 30px 30px;
   }
 }
-/* line 264, ../sass/templates/_testimonials.scss */
+/* line 301, ../sass/templates/_testimonials.scss */
 #work-single .content .intro h3 {
   font-size: 44px;
   font-size: 4.4rem;
-  margin-bottom: 4px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 1650px) {
-  /* line 264, ../sass/templates/_testimonials.scss */
+  /* line 301, ../sass/templates/_testimonials.scss */
   #work-single .content .intro h3 {
     font-size: 35px;
     font-size: 3.5rem;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 264, ../sass/templates/_testimonials.scss */
+  /* line 301, ../sass/templates/_testimonials.scss */
   #work-single .content .intro h3 {
     font-size: 25px;
     font-size: 2.5rem;
   }
 }
-/* line 274, ../sass/templates/_testimonials.scss */
+/* line 311, ../sass/templates/_testimonials.scss */
 #work-single .content .intro h4 {
   font-size: 18px;
   font-size: 1.8rem;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 1650px) {
-  /* line 274, ../sass/templates/_testimonials.scss */
+  /* line 311, ../sass/templates/_testimonials.scss */
   #work-single .content .intro h4 {
     margin-bottom: 30px;
     font-size: 14px;
     font-size: 1.4rem;
   }
 }
-/* line 285, ../sass/templates/_testimonials.scss */
+/* line 322, ../sass/templates/_testimonials.scss */
 #work-single .content footer.intro h3 {
   margin-bottom: 30px;
 }
-/* line 288, ../sass/templates/_testimonials.scss */
+/* line 325, ../sass/templates/_testimonials.scss */
 #work-single .content footer.intro h4 {
   padding: 0 20%;
 }
 @media screen and (max-width: 660px) {
-  /* line 288, ../sass/templates/_testimonials.scss */
+  /* line 325, ../sass/templates/_testimonials.scss */
   #work-single .content footer.intro h4 {
     padding: 0;
   }
 }
 
-/* line 301, ../sass/templates/_testimonials.scss */
+/* line 338, ../sass/templates/_testimonials.scss */
 .column {
   float: left;
   display: block;
@@ -4279,12 +4438,12 @@ ul#testimonial-clients li a:hover, ul#testimonial-clients li a:active {
   position: relative;
 }
 @media screen and (max-width: 660px) {
-  /* line 301, ../sass/templates/_testimonials.scss */
+  /* line 338, ../sass/templates/_testimonials.scss */
   .column {
     float: none;
   }
 }
-/* line 310, ../sass/templates/_testimonials.scss */
+/* line 347, ../sass/templates/_testimonials.scss */
 .column .cell {
   display: block;
   width: 100%;
@@ -4298,20 +4457,20 @@ ul#testimonial-clients li a:hover, ul#testimonial-clients li a:active {
   background-size: cover;
 }
 @media screen and (max-width: 660px) {
-  /* line 310, ../sass/templates/_testimonials.scss */
+  /* line 347, ../sass/templates/_testimonials.scss */
   .column .cell {
     height: auto;
   }
 }
 @media screen and (min-width: 661px) {
-  /* line 320, ../sass/templates/_testimonials.scss */
+  /* line 357, ../sass/templates/_testimonials.scss */
   .column .cell:before {
     content: "";
     display: block;
     padding-top: 70%;
   }
 }
-/* line 327, ../sass/templates/_testimonials.scss */
+/* line 364, ../sass/templates/_testimonials.scss */
 .column .cell .inner {
   top: 0;
   right: 0;
@@ -4321,50 +4480,38 @@ ul#testimonial-clients li a:hover, ul#testimonial-clients li a:active {
   height: 100%;
 }
 @media screen and (max-width: 660px) {
-  /* line 327, ../sass/templates/_testimonials.scss */
+  /* line 364, ../sass/templates/_testimonials.scss */
   .column .cell .inner {
     position: relative;
     padding: 60px 30px 30px;
   }
 }
-/* line 334, ../sass/templates/_testimonials.scss */
-.column .cell .inner div {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+/* line 371, ../sass/templates/_testimonials.scss */
+.column .cell .inner .vcenter-wrap {
+  width: 100%;
+  height: 100%;
+  display: block;
+  vertical-align: middle;
+  padding: 0;
   text-align: center;
-  padding: 0 14%;
 }
-@media screen and (max-width: 1020px) {
-  /* line 334, ../sass/templates/_testimonials.scss */
-  .column .cell .inner div {
-    padding: 0 8%;
-  }
+/* line 378, ../sass/templates/_testimonials.scss */
+.column .cell .inner .vcenter-wrap .vcenter-inner {
+  display: inline-block;
+  width: 98%;
+  vertical-align: middle;
 }
-@media screen and (max-width: 660px) {
-  /* line 334, ../sass/templates/_testimonials.scss */
-  .column .cell .inner div {
-    position: relative;
-    top: auto;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-    padding: 0;
-  }
-}
-/* line 345, ../sass/templates/_testimonials.scss */
-.column .cell .inner div p {
+/* line 384, ../sass/templates/_testimonials.scss */
+.column .cell .inner p {
   text-align: left;
 }
 @media screen and (max-width: 660px) {
-  /* line 345, ../sass/templates/_testimonials.scss */
-  .column .cell .inner div p {
+  /* line 384, ../sass/templates/_testimonials.scss */
+  .column .cell .inner p {
     text-align: center;
   }
 }
-/* line 353, ../sass/templates/_testimonials.scss */
+/* line 391, ../sass/templates/_testimonials.scss */
 .column .cell h5 {
   font-size: 34px;
   font-size: 3.4rem;
@@ -4374,59 +4521,59 @@ ul#testimonial-clients li a:hover, ul#testimonial-clients li a:active {
   margin-bottom: 40px;
 }
 @media screen and (max-width: 1650px) {
-  /* line 353, ../sass/templates/_testimonials.scss */
+  /* line 391, ../sass/templates/_testimonials.scss */
   .column .cell h5 {
     font-size: 25px;
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 353, ../sass/templates/_testimonials.scss */
+  /* line 391, ../sass/templates/_testimonials.scss */
   .column .cell h5 {
     margin-bottom: 30px;
   }
 }
-/* line 368, ../sass/templates/_testimonials.scss */
+/* line 406, ../sass/templates/_testimonials.scss */
 .column .cell .underline:after {
   margin-top: 15px;
 }
-/* line 373, ../sass/templates/_testimonials.scss */
+/* line 411, ../sass/templates/_testimonials.scss */
 .column.half {
   width: 50%;
 }
 @media screen and (min-width: 661px) {
-  /* line 376, ../sass/templates/_testimonials.scss */
+  /* line 414, ../sass/templates/_testimonials.scss */
   .column.half .cell:before {
     padding-top: 140%;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 381, ../sass/templates/_testimonials.scss */
+  /* line 419, ../sass/templates/_testimonials.scss */
   .column.half .cell.image {
     height: 500px;
   }
 }
 @media screen and (min-width: 661px) {
-  /* line 387, ../sass/templates/_testimonials.scss */
+  /* line 425, ../sass/templates/_testimonials.scss */
   .column.half .cell.half-height:before {
     padding-top: 70%;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 392, ../sass/templates/_testimonials.scss */
+  /* line 430, ../sass/templates/_testimonials.scss */
   .column.half .cell.half-height.image {
     height: 250px;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 373, ../sass/templates/_testimonials.scss */
+  /* line 411, ../sass/templates/_testimonials.scss */
   .column.half {
     width: 100%;
   }
 }
 
-/* line 405, ../sass/templates/_testimonials.scss */
+/* line 443, ../sass/templates/_testimonials.scss */
 nav#categories {
   width: 100%;
   position: relative;
@@ -4448,23 +4595,23 @@ nav#categories ul li {
   position: relative;
   right: 50%;
 }
-/* line 409, ../sass/templates/_testimonials.scss */
+/* line 447, ../sass/templates/_testimonials.scss */
 nav#categories li {
   margin: 0 20px;
 }
 @media screen and (max-width: 1650px) {
-  /* line 409, ../sass/templates/_testimonials.scss */
+  /* line 447, ../sass/templates/_testimonials.scss */
   nav#categories li {
     margin: 0 10px;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 409, ../sass/templates/_testimonials.scss */
+  /* line 447, ../sass/templates/_testimonials.scss */
   nav#categories li {
     margin: 0 5px;
   }
 }
-/* line 418, ../sass/templates/_testimonials.scss */
+/* line 456, ../sass/templates/_testimonials.scss */
 nav#categories a, nav#categories span {
   display: block;
   width: 50px;
@@ -4488,19 +4635,19 @@ nav#categories a, nav#categories span {
   */
 }
 @media screen and (max-width: 1650px) {
-  /* line 418, ../sass/templates/_testimonials.scss */
+  /* line 456, ../sass/templates/_testimonials.scss */
   nav#categories a, nav#categories span {
     width: 38px;
     height: 33px;
   }
 }
-/* line 426, ../sass/templates/_testimonials.scss */
+/* line 464, ../sass/templates/_testimonials.scss */
 nav#categories a img, nav#categories span img {
   width: 100%;
   height: auto;
 }
 
-/* line 449, ../sass/templates/_testimonials.scss */
+/* line 487, ../sass/templates/_testimonials.scss */
 nav#social-share {
   width: 100%;
   position: relative;
@@ -4521,7 +4668,7 @@ nav#social-share ul li {
   position: relative;
   right: 50%;
 }
-/* line 452, ../sass/templates/_testimonials.scss */
+/* line 490, ../sass/templates/_testimonials.scss */
 nav#social-share span {
   display: block;
   margin: 10px auto 10px;
@@ -4531,17 +4678,17 @@ nav#social-share span {
   font-size: 1.6rem;
 }
 @media screen and (max-width: 1650px) {
-  /* line 452, ../sass/templates/_testimonials.scss */
+  /* line 490, ../sass/templates/_testimonials.scss */
   nav#social-share span {
     font-size: 14px;
     font-size: 1.4rem;
   }
 }
-/* line 462, ../sass/templates/_testimonials.scss */
+/* line 500, ../sass/templates/_testimonials.scss */
 nav#social-share li {
   margin: 0 4px;
 }
-/* line 464, ../sass/templates/_testimonials.scss */
+/* line 502, ../sass/templates/_testimonials.scss */
 nav#social-share li a {
   width: 30px;
   height: 30px;
@@ -4552,26 +4699,26 @@ nav#social-share li a {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 1650px) {
-  /* line 464, ../sass/templates/_testimonials.scss */
+  /* line 502, ../sass/templates/_testimonials.scss */
   nav#social-share li a {
     width: 22px;
     height: 22px;
   }
 }
-/* line 478, ../sass/templates/_testimonials.scss */
+/* line 516, ../sass/templates/_testimonials.scss */
 nav#social-share li a.twitter {
   background-image: url("../images/twitter-share.png");
 }
-/* line 481, ../sass/templates/_testimonials.scss */
+/* line 519, ../sass/templates/_testimonials.scss */
 nav#social-share li a.email {
   background-image: url("../images/email-share.png");
 }
-/* line 484, ../sass/templates/_testimonials.scss */
+/* line 522, ../sass/templates/_testimonials.scss */
 nav#social-share li a.linkedin {
   background-image: url("../images/linkedin-share.png");
 }
 
-/* line 490, ../sass/templates/_testimonials.scss */
+/* line 528, ../sass/templates/_testimonials.scss */
 nav.controls {
   width: 70px;
   z-index: 9999;
@@ -4584,18 +4731,18 @@ nav.controls {
   top: 0;
   right: 0;
 }
-/* line 499, ../sass/templates/_testimonials.scss */
+/* line 537, ../sass/templates/_testimonials.scss */
 nav.controls.show {
   display: block;
 }
 @media screen and (max-width: 1650px) {
-  /* line 490, ../sass/templates/_testimonials.scss */
+  /* line 528, ../sass/templates/_testimonials.scss */
   nav.controls {
     width: 50px;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 490, ../sass/templates/_testimonials.scss */
+  /* line 528, ../sass/templates/_testimonials.scss */
   nav.controls {
     width: 100%;
     height: 50px;
@@ -4607,17 +4754,17 @@ nav.controls.show {
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 517, ../sass/templates/_testimonials.scss */
+  /* line 555, ../sass/templates/_testimonials.scss */
   nav.controls ul li {
     float: left;
     display: inline-block;
   }
-  /* line 521, ../sass/templates/_testimonials.scss */
+  /* line 559, ../sass/templates/_testimonials.scss */
   nav.controls ul li.close {
     float: right;
   }
 }
-/* line 526, ../sass/templates/_testimonials.scss */
+/* line 564, ../sass/templates/_testimonials.scss */
 nav.controls ul li a {
   width: 70px;
   height: 70px;
@@ -4628,57 +4775,57 @@ nav.controls ul li a {
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 660px) {
-  /* line 526, ../sass/templates/_testimonials.scss */
+  /* line 564, ../sass/templates/_testimonials.scss */
   nav.controls ul li a {
     background-image: url("../images/prev-btn-black.png");
     background-color: #b8b8b8;
   }
 }
 @media screen and (max-width: 1650px) {
-  /* line 526, ../sass/templates/_testimonials.scss */
+  /* line 564, ../sass/templates/_testimonials.scss */
   nav.controls ul li a {
     background-size: 10px 19px;
   }
 }
-/* line 542, ../sass/templates/_testimonials.scss */
+/* line 580, ../sass/templates/_testimonials.scss */
 nav.controls ul li a:hover, nav.controls ul li a:active {
   background-color: #333333;
 }
 @media screen and (max-width: 660px) {
-  /* line 542, ../sass/templates/_testimonials.scss */
+  /* line 580, ../sass/templates/_testimonials.scss */
   nav.controls ul li a:hover, nav.controls ul li a:active {
     background-color: #d2d2d2;
   }
 }
-/* line 548, ../sass/templates/_testimonials.scss */
+/* line 586, ../sass/templates/_testimonials.scss */
 nav.controls ul li a.next {
   background-image: url("../images/next-btn.png");
 }
 @media screen and (max-width: 660px) {
-  /* line 548, ../sass/templates/_testimonials.scss */
+  /* line 586, ../sass/templates/_testimonials.scss */
   nav.controls ul li a.next {
     background-image: url("../images/next-btn-black.png");
   }
 }
-/* line 554, ../sass/templates/_testimonials.scss */
+/* line 592, ../sass/templates/_testimonials.scss */
 nav.controls ul li a.close {
   background-image: url("../images/close-btn.png");
 }
 @media screen and (max-width: 1650px) {
-  /* line 554, ../sass/templates/_testimonials.scss */
+  /* line 592, ../sass/templates/_testimonials.scss */
   nav.controls ul li a.close {
     background-size: 19px 19px;
   }
 }
 @media screen and (max-width: 660px) {
-  /* line 554, ../sass/templates/_testimonials.scss */
+  /* line 592, ../sass/templates/_testimonials.scss */
   nav.controls ul li a.close {
     background-image: url("../images/close-btn-black.png");
     float: right;
   }
 }
 @media screen and (max-width: 1650px) {
-  /* line 526, ../sass/templates/_testimonials.scss */
+  /* line 564, ../sass/templates/_testimonials.scss */
   nav.controls ul li a {
     width: 50px;
     height: 50px;
@@ -4695,7 +4842,7 @@ video {
   border:none;
 }
 */
-/* line 582, ../sass/templates/_testimonials.scss */
+/* line 620, ../sass/templates/_testimonials.scss */
 a.video-control {
   display: block;
   -webkit-transition: background-color 0.2s ease-in-out;
@@ -4716,11 +4863,11 @@ a.video-control {
   position: absolute;
   z-index: 999;
 }
-/* line 596, ../sass/templates/_testimonials.scss */
+/* line 634, ../sass/templates/_testimonials.scss */
 a.video-control:hover, a.video-control:active {
   background-color: #19629a;
 }
-/* line 599, ../sass/templates/_testimonials.scss */
+/* line 637, ../sass/templates/_testimonials.scss */
 a.video-control.play {
   background-position: right top;
 }
