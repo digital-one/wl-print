@@ -1,0 +1,1561 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"en",
+				"enlightenment-page"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"help",
+				"helper-standard"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"helper-",
+				"helper-thick"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"init",
+				"initMatchHeight"
+			],
+			[
+				"remov",
+				"removeClass"
+			],
+			[
+				"refres",
+				"refreshFilterMenu"
+			],
+			[
+				"mor",
+				"morphSearch"
+			],
+			[
+				"morp",
+				"morphsearch-input"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"helper-th",
+				"helper-thicker"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"slider-",
+				"slider-carousel-wrap"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"account",
+				"account-menu-wrapper"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"tof",
+				"tofs-blue"
+			],
+			[
+				"cente",
+				"center-content-vertical"
+			],
+			[
+				"inline",
+				"inline-menu"
+			],
+			[
+				"fot",
+				"font-weight"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"redirect",
+				"redirect_id"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"_isMob",
+				"_isMobileNav"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"h",
+				"half-spacing"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"header",
+				"header-underline"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"bran",
+				"brandongrotesque-regular"
+			],
+			[
+				"SCR",
+				"SCROLLABLE_SEL"
+			],
+			[
+				"page-t",
+				"page-template-template-brand"
+			],
+			[
+				"brand",
+				"brandongrotesque-bold"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"wor",
+				"word-spacing"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"val",
+				"validation_message"
+			],
+			[
+				"validation",
+				"validation_error"
+			],
+			[
+				"con",
+				"contact_email"
+			],
+			[
+				"txt_",
+				"txt_name"
+			],
+			[
+				"txt",
+				"txt_title"
+			],
+			[
+				"strip",
+				"stripslashes"
+			],
+			[
+				"i",
+				"important"
+			],
+			[
+				"emai",
+				"email_from_name"
+			],
+			[
+				"pr",
+				"proximanova-bold"
+			],
+			[
+				"destry",
+				"destroyAccordion"
+			],
+			[
+				"dest",
+				"destroyAccordion"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"ht",
+				"htmlentities"
+			],
+			[
+				"sub",
+				"subMenuLinks"
+			],
+			[
+				"subMenu",
+				"subMenuChildLinks"
+			],
+			[
+				"replace",
+				"replaceFileFields"
+			],
+			[
+				"accord",
+				"accordion_pages"
+			],
+			[
+				"menu",
+				"menu-item-has-children"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"pro",
+				"proximanova-bold"
+			],
+			[
+				"backgroun",
+				"background-image"
+			],
+			[
+				"slick",
+				"slick-dots"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"current-",
+				"current-menu-item"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"curr",
+				"currentTarget"
+			],
+			[
+				"all",
+				"alllinks"
+			],
+			[
+				"crr",
+				"current-menu-item"
+			],
+			[
+				"current",
+				"current-menu-item"
+			],
+			[
+				"has",
+				"menu-item-has-children"
+			],
+			[
+				"cur",
+				"currentTarget"
+			],
+			[
+				"ref",
+				"refreshPushLinkActions"
+			],
+			[
+				"mobi",
+				"mobileMenuIsActive"
+			],
+			[
+				"toggle",
+				"toggleMobileDropDown"
+			],
+			[
+				"close",
+				"closeMobileMenu"
+			],
+			[
+				"isMob",
+				"isMobileMenu"
+			],
+			[
+				"wr",
+				"break-word"
+			],
+			[
+				"ur",
+				"urlencode"
+			],
+			[
+				"rep",
+				"replace"
+			],
+			[
+				"first",
+				"firstLoad"
+			],
+			[
+				"casestudies",
+				"casestudies_category"
+			],
+			[
+				"tran",
+				"transparent"
+			],
+			[
+				"activ",
+				"activateDropDown"
+			],
+			[
+				"our",
+				"our-people-sector"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"whit",
+				"white-space"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"fi",
+				"fill"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"gutte",
+				"gutter-2x"
+			],
+			[
+				"overflow",
+				"overflow-x"
+			],
+			[
+				"dar",
+				"dark-grey"
+			],
+			[
+				"visi",
+				"visible"
+			],
+			[
+				"aside",
+				"asideHeight"
+			],
+			[
+				"bu",
+				"button-inner"
+			],
+			[
+				"str_rep",
+				"str_replace"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"incorr",
+				"incorrectPanel"
+			],
+			[
+				"di",
+				"dinreg"
+			],
+			[
+				"list-s",
+				"list-style-type"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"roboto",
+				"roboto-sans"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"backgro",
+				"background-color"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"poit",
+				"position"
+			],
+			[
+				"lt",
+				"lt-blue"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "wp-content/themes/shark/sass/templates/_what-we-do.scss",
+			"settings":
+			{
+				"buffer_size": 4725,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/sass/templates/_our-work.scss",
+			"settings":
+			{
+				"buffer_size": 11049,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/sass/components/_global.scss",
+			"settings":
+			{
+				"buffer_size": 10849,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/js/scripts.js",
+			"settings":
+			{
+				"buffer_size": 34428,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/footer.php",
+			"settings":
+			{
+				"buffer_size": 2363,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/archive-enlightenment.php",
+			"settings":
+			{
+				"buffer_size": 1856,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/functions/post-types.php",
+			"settings":
+			{
+				"buffer_size": 388,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/post_types/enlightenment.php",
+			"settings":
+			{
+				"buffer_size": 4302,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/template-enlightenment.php",
+			"settings":
+			{
+				"buffer_size": 95,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/template-what-we-do.php",
+			"settings":
+			{
+				"buffer_size": 2808,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/page.php",
+			"settings":
+			{
+				"buffer_size": 1525,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/sass/templates/_testimonials.scss",
+			"settings":
+			{
+				"buffer_size": 13586,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/shark/sass/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 3651,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 111.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/wl_print/wp-content/themes/shark/sass/templates/_testimonials.scss",
+		"/Applications/MAMP/htdocs/mpd/wp-content/themes/shark/js/scripts.js",
+		"/Applications/MAMP/htdocs/mpd/mpd.sql",
+		"/Applications/MAMP/htdocs/mpd/wp-content/themes/shark/template-what-we-do.php",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_navigation.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_blog.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/wordpress/post/list/renderer/default.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/_components.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/_settings.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/layout/page.xml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_sidebar.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_slider.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/page/2columns-left.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/js/tofs.js",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_cms-pages.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/code/core/Enterprise/Cms/Block/Hierarchy/Menu.php",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/page/html/footer.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_products-list.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/locale/en_GB/email/html/footer.html",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/locale/en_GB/email/html/header.html",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/code/local/Onstate/AdditionalLayouts/etc/config.xml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/page/1column.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/page/blog-2columns-left.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_price.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/foundation/scss/foundation/components/_global.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_off-canvas-menu.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_cart.scss",
+		"/Users/neilmills/Downloads/europlus/epd.sql",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/checkout/cart.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_items.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_header.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/index.php",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_checkout.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/helpers/mixins/_breakpoints.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/etc/local.xml",
+		"/Users/neilmills/Downloads/epd_local.sql",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/checkout/cart/item/default.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/js/polar.js",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/js/scripts.js",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_structural.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/checkout/cart/totals.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/js/jquery.matchHeight-min.js",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/polar/default/js/polar.js",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/page/html/off-canvas-left.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/page/html/topmenu.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/sales/order/totals.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/checkout/onepage/link.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/polar/default/template/checkout/cart/item/default.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/page/html/topmenu-mobile.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/layout/polarcore.xml",
+		"/Users/neilmills/Downloads/MorphingSearch/index.html",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/layout/catalog.xml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/polar/default/template/page/html/off-canvas-left.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/page/html/top-links.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/page/html/header.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/catalog/category/categorylist.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/polar/default/template/page/html/topmenu.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/polar/default/layout/polarcore.xml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/code/core/Mage/Catalog/Block/Navigation.php",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_morphsearch.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/catalogsearch/form.mini.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/polar/default/template/page/html/topmenu-mobile.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/checkout/cart/sidebar-mobile.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_footer.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_base.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/js/classie.js",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_off-canvas.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/_ie9-components-2.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/page/html/head.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_icons.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/templates/_home.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/layout/onstate_categorylistpage.xml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_category.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/catalog/product/list.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/catalog/product/view.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/code/local/Onstate/CategoryListPage/etc/config.xml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/base/default/layout/catalog.xml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/_ie9-components-1.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/ie9_styles_1.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/ie9_styles_2.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_product.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/helpers/mixins/_font-styles.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/enterprise/default/template/catalog/product/view.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/enterprise/default/template/bundle/catalog/product/view.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_form.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/newsletter/subscribe.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/polar/default/template/catalog/product/view.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/catalog/product/view/media.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/base/default/template/catalog/product/view.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/checkout/cart/sidebar/default.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/base/default/template/catalog/product/list/toolbar.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/catalog/product/list/toolbar.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_top-cart.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/checkout/cart/sidebar.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_buttons.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_typography.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/customer/form/edit.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/persistent/customer/form/login.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_breadcrumbs.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/page/html/breadcrumbs.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/helpers/mixins/_buttons.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/base/default/template/page/html/pager.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/locale/en_GB/translate.csv",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_account.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/layout/customer.xml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/styles.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/rwd/default/template/checkout/cart/minicart.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/customer/address/book.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/sales/order/history.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/customer/form/newsletter.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/skin/frontend/tofs/default/scss/components/_helpers.scss",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/customer/form/changepassword.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/polar/default/template/persistent/customer/form/login.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/base/default/template/customer/form/login.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/customer/address/edit.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/enterprise/default/template/customer/address/edit.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/enterprise/default/template/customer/form/edit.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/base/default/template/customer/account/link/back.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/base/default/template/customer/address/book.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/base/default/template/customer/form/edit.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/base/default/template/customer/orders.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/sales/order/recent.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/layout/searchautocomplete.xml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/layout/catalogsearch.xml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/searchautocomplete/result.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/customer/account/dashboard.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/base/default/template/amasty/amshopby/list.phtml",
+		"/Applications/MAMP/htdocs/tofs-magento/src/app/design/frontend/tofs/default/template/catalog/category/view.phtml"
+	],
+	"find":
+	{
+		"height": 136.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"/Applications/MAMP/htdocs/bolser/bolser-mobile-wp",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"scrollTo",
+			"$root",
+			"destroyScrollTo",
+			"$root",
+			"split",
+			"scrollTo",
+			"isMobile",
+			"testimonial",
+			"page-title",
+			"masonry",
+			"posts",
+			"removeAttr",
+			"enlightenment",
+			"removeAttr",
+			"id",
+			"scrollbarActive",
+			"perfect",
+			"$container",
+			"scroll-area",
+			"posts-container",
+			"http://www.mpd.co.uk",
+			"marker",
+			"market",
+			"blue",
+			"brochure",
+			"http://www.wlprint.co.uk",
+			"ie9_styles",
+			"Sticky",
+			"acc-",
+			"acc-btn",
+			"acc-container",
+			"acc-tabs-container",
+			"polar-toggle",
+			"cms-menu",
+			"class=\"cms-menu\"",
+			"polar-toggle",
+			"cms-menu",
+			"<reference name=\"left\">",
+			"class=\"featured-image\"",
+			"scrollTo",
+			"amshopby-collapse-enabled",
+			"class=\"post-view\"",
+			"flash",
+			"wp-sidebar",
+			"wp-",
+			".item",
+			"class=\"featured-image\"",
+			"id=\"post-list\"",
+			"sidebar",
+			"$theme",
+			"$this->helper",
+			"bass",
+			"basslocal",
+			"@media",
+			"xl",
+			"media",
+			"aside",
+			"INSERT INTO `wp_icl_flags",
+			"INSERT INTO `wp_icl_flags`",
+			"INSERT INTO `wp_comments` ",
+			"md",
+			"cart-right",
+			"discount",
+			"cart-right",
+			"cart-left",
+			"xsmall-3",
+			"cart-right",
+			"col-right",
+			"xsmall-6",
+			"cart-left-col",
+			"cart-left",
+			"totals",
+			"hide-for",
+			"show-for",
+			"-xs",
+			"xs-",
+			"xs-6",
+			"xs",
+			"page-title",
+			"title-buttons",
+			"btn-remove-desktop",
+			"shopping-",
+			"col1-layout main-content",
+			"btn-update-link",
+			"button",
+			"update_cart_action",
+			"filter",
+			"hide",
+			"discount-block",
+			"class=\"price\"",
+			"class=\"totals-sub",
+			"xs",
+			"toggle",
+			"$darkergrey",
+			"$font",
+			"@include",
+			"roboto",
+			"$lightergrey",
+			"$lightgrey",
+			"$darkergrey",
+			"$lightergrey",
+			"$lightgrey",
+			"xsmall",
+			"Proceed to Checkout",
+			"class=\"short-description",
+			"btn-proceed-checkout",
+			"btn-continue",
+			"hide-for-small",
+			"polar.main.menu",
+			"polar-main-menu",
+			"polar.main.menu.mobile",
+			"level-top",
+			"topMenu-mobile",
+			"left-off-canvas-menu",
+			"class=\"level-",
+			"class=\"level-top",
+			"class=\"level0",
+			"class=\"level",
+			"level-top",
+			"hide-for-small",
+			"polar.main.menu.mobile",
+			"hide-for-small",
+			"level-top",
+			"topMenu-mobile",
+			"off-canvas-menu-wrapper",
+			"hide-for-small",
+			"nav-mobile",
+			"_ctrlClose"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"http://92.60.114.159/~aluminiumsliding",
+			"<a href=\"/~altinetco/build/",
+			"action=\"/~altinetco/build/",
+			"<a href=\"~altinetco/build/",
+			"slide_old",
+			"slide_new",
+			"title_hide",
+			"title_show",
+			"header_show",
+			"console.log",
+			"quickmenu",
+			"end",
+			"---------------------",
+			"",
+			"s07_05",
+			"present",
+			"s09_06",
+			"s09_05",
+			"s09_04",
+			"s09_03",
+			"s09_02",
+			"promo-01",
+			"s09_01",
+			"promo-01",
+			"promo-0",
+			"promot-01",
+			"09_06",
+			"09_05",
+			"09_04",
+			"09_03",
+			"09_02",
+			"permanent-02",
+			"row_05",
+			"row_04",
+			"row_03",
+			"row_02",
+			"s07_04",
+			", ",
+			"s06_03",
+			"s06_02",
+			"},this));",
+			"},this);",
+			"s05_03",
+			"promo",
+			"permanent",
+			"promo",
+			"permanent",
+			"instore",
+			"lineup",
+			"lazyfade",
+			"fragrance-03",
+			"s05_03",
+			"s05_02",
+			"s05_01",
+			"fragrance-01",
+			"s05",
+			"fragrance",
+			"brand",
+			"14",
+			"_11",
+			"-11",
+			"11",
+			"10",
+			"08",
+			"09",
+			"-09",
+			"-05",
+			"-03",
+			"hilite-colour",
+			"s01_08",
+			"s01_07",
+			"",
+			"s01_05",
+			"fragrance",
+			"brand",
+			".slide-title",
+			"#title",
+			"header",
+			"d",
+			"' + t + '",
+			"quickmenu",
+			"z-below",
+			"z-above",
+			"z-bottom",
+			"t_1500",
+			"t_500",
+			"",
+			"translateX(75px) ",
+			"",
+			"transform",
+			"t_1000",
+			"",
+			",",
+			"",
+			"hilite-colour",
+			"quickmenu",
+			"this.config.testing.debug",
+			"helvetica_neue_normal",
+			"helvetica_neue_bold",
+			"helvetica_neue_heavy",
+			"helvetica_neue_blk",
+			"helvetica_neue_bld",
+			"helvetica_neue_bd",
+			"helvetica_neue_med",
+			"helvetica_neue_lt_Md",
+			"helvetica_neue_lt",
+			"helvetica_neue_lt_xBlk",
+			"../",
+			"menu-container",
+			"'home'",
+			"widgets_btn_home_handler",
+			"	border-bottom: 2px solid #e20044;\nwidgets_btn_home_handler",
+			"#menu-container",
+			"if (ev.gesture)",
+			"cubeface tiled",
+			"logo_live_cube",
+			"menu_show",
+			"videointro_show",
+			"logointro_show",
+			"this.log",
+			"testing.",
+			"app_init",
+			"logointro",
+			"logo-intro",
+			"logointro",
+			"logo-intro",
+			"logo_intro",
+			"logo_intro_show"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 9,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "wp-content/themes/shark/sass/templates/_what-we-do.scss",
+					"settings":
+					{
+						"buffer_size": 4725,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3443,
+								3443
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1715.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/shark/sass/templates/_our-work.scss",
+					"settings":
+					{
+						"buffer_size": 11049,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1440,
+								1440
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 477.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/shark/sass/components/_global.scss",
+					"settings":
+					{
+						"buffer_size": 10849,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2105,
+								2105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1329.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/shark/js/scripts.js",
+					"settings":
+					{
+						"buffer_size": 34428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21632,
+								21632
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 12988.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/shark/footer.php",
+					"settings":
+					{
+						"buffer_size": 2363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1293,
+								1306
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/shark/archive-enlightenment.php",
+					"settings":
+					{
+						"buffer_size": 1856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/shark/functions/post-types.php",
+					"settings":
+					{
+						"buffer_size": 388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "wp-content/themes/shark/post_types/enlightenment.php",
+					"settings":
+					{
+						"buffer_size": 4302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4132,
+								4132
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 987.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "wp-content/themes/shark/template-enlightenment.php",
+					"settings":
+					{
+						"buffer_size": 95,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "wp-content/themes/shark/template-what-we-do.php",
+					"settings":
+					{
+						"buffer_size": 2808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1156,
+								1156
+							],
+							[
+								1622,
+								1622
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 237.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "wp-content/themes/shark/page.php",
+					"settings":
+					{
+						"buffer_size": 1525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								702,
+								702
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "wp-content/themes/shark/sass/templates/_testimonials.scss",
+					"settings":
+					{
+						"buffer_size": 13586,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								685,
+								685
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "wp-content/themes/shark/sass/_variables.scss",
+					"settings":
+					{
+						"buffer_size": 3651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 387.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 63.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"wp-content/themes/europlusdirect/footer.php"
+			],
+			[
+				"gameviw",
+				"nokia-the-connection/www/workspace/pages/games_view.xsl"
+			],
+			[
+				"commons",
+				"nokia-the-connection/www/workspace/assets/js/common.js"
+			],
+			[
+				"commonjs",
+				"nokia-the-connection/www/workspace/games/126823/common.js"
+			],
+			[
+				"maincoff",
+				"nokia-the-connection/www/workspace/games/278329/js/lib/game/views/main.coffee"
+			],
+			[
+				"comm",
+				"nokia-the-connection/www/workspace/games/126823/common.js"
+			],
+			[
+				"gameques",
+				"nokia-the-connection/www/workspace/pages/games_view_questions.xsl"
+			],
+			[
+				"gameq",
+				"nokia-the-connection/www/workspace/pages/games_view_questions.xsl"
+			],
+			[
+				"common",
+				"juggle/wp-admin/js/common.js"
+			],
+			[
+				"commsjs",
+				"nokia-the-connection/www/workspace/games/278329/bower_components/jquery/src/manipulation/support.js"
+			],
+			[
+				"comms",
+				"nokia-the-connection/www/extensions/markdown/lib/htmlpurifier-4.5.0-standalone/standalone/HTMLPurifier/ConfigSchema/schema/Output.CommentScriptContents.txt"
+			],
+			[
+				"gamequestions",
+				"nokia-the-connection/www/workspace/pages/games_view_questions.xsl"
+			],
+			[
+				"vagra",
+				"nokia-the-connection/Vagrantfile"
+			],
+			[
+				".ht",
+				"nokia-the-connection/www/.htaccess"
+			],
+			[
+				"bran",
+				"StartInitiativePC_Data/Mono/etc/mono/browscap.ini"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Applications/MAMP/htdocs/jump/livingwood/livingwood.sublime-project"
+			]
+		],
+		"width": 823.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 360.0,
+	"status_bar_visible": true
+}

@@ -11,7 +11,7 @@
 <?php
     $args = array(
       'hide_empty' => 0,
-      'number' => 6
+      'number' => 8
       );
       if($clients = get_terms( 'testimonial_category', $args)):
     
@@ -32,7 +32,7 @@
   <?php
     $args = array(
       'hide_empty' => 0,
-      'number' => 6
+      'number' => 8
       );
       if($clients = get_terms( 'testimonial_category', $args)):
         foreach($clients as $client): 

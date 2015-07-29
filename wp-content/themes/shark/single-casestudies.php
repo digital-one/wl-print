@@ -13,6 +13,7 @@ $logo_src = $src;
     $args = array(
           'post_type' => 'casestudies',
           'orderby' => 'menu_order',
+          'order' => 'ASC',
           'post_status' => 'publish',
           'numberposts' => 6
         );
@@ -37,7 +38,7 @@ $logo_src = $src;
          
       endif;
         ?>
- <nav class="controls" <?php if(is_single()): ?> class="show"<?php endif ?>><ul><li class="close"><a href="<?php echo home_url() ?>/#our-work" class="close push-link">Close</a></li><li><a href="<?php echo $prev_permalink ?>" class="prev push-link">Previous</a></li><li><a href="<?php echo $next_permalink ?>" class="next push-link">Next</a></li></ul></nav>
+ <nav class="controls" <?php if(is_single()): ?> class="show"<?php endif ?>><ul><li class="close"><a href="<?php echo home_url() ?>/#work" class="close push-link">Close</a></li><li><a href="<?php echo $prev_permalink ?>" class="prev push-link">Previous</a></li><li><a href="<?php echo $next_permalink ?>" class="next push-link">Next</a></li></ul></nav>
 
 
   <section class="page-title" style="background-color:<?php echo get_field('primary_colour',$post->ID) ?>;">
@@ -120,7 +121,7 @@ list($image2_src,$w,$h) = wp_get_attachment_image_src(get_field('third_section_i
 <div class="column"><div class="cell image" style="background-image:url('<?php echo $image2_src ?>');"></div></div>
 <?php endif ?>
     </section>
-<footer id="cta" class="intro" style="background-color:<?php echo $colour ?>;"><h3 class="underline"><?php echo get_field('fourth_section_heading',$post->ID) ?></h3><a href="mailto:enquiries@sharkdesign.co.uk" class="button">Start your project</a>
+<footer id="cta" class="intro" style="background-color:<?php echo $colour ?>;"><h3 class="underline"><?php echo get_field('fourth_section_heading',$post->ID) ?></h3><a href="mailto:enquiries@wlprint.co.uk" class="button">Start your project</a>
 </footer>
    </div>
 </div>

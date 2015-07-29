@@ -19,7 +19,7 @@ list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
 		$c=1;
 while(the_repeater_field('image_grid')): 
 	$class="";
-	if($c>6) $class=' medium-up';
+	if($c>8) $class=' medium-up';
 	if($c>10) $class=' medium-up large-up';
 	if($c>12) $class=' medium-up large-up xlarge-up';
 list($src,$w,$h) = wp_get_attachment_image_src(get_sub_field('image'), 'full');

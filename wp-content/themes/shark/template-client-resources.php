@@ -27,11 +27,13 @@ if(get_field('resource_links',$post->ID)):
 while(the_repeater_field('resource_links',$post->ID)): 
 ?>
 <div class="column">
-    <a href="?php echo get_sub_field('resource_url') ?>" target="_blank" class="inner">
+    <a href="<?php echo get_sub_field('resource_url') ?>" target="_blank" class="inner">
+    	<div class="vcenter">
 <h3><?php echo get_sub_field('resource_title') ?></h3>
 <p><?php echo get_sub_field('resource_text') ?></p>
  
     <p><span class="button"><?php echo do_shortcode(get_sub_field('resource_button_label')) ?></span></p>
+</div>
 </a>
 </div>
 <?php endwhile; ?>

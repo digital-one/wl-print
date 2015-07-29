@@ -17,8 +17,15 @@
         @media screen and (max-width: $break-small){
         	height: 44px;
         }
+       
+        @media screen and (max-width: $break-xlarge){
+        	height: 54px;
+        }
         @media screen and (min-width: $break-xlarge+1){
           	height:94px;
+        }
+          @media screen and (max-width: $break-medium -1){
+        	height: 74px;
         }
         text-align: center;
         img{
@@ -28,6 +35,14 @@
           	display: inline-block;
         }
 	}
+	.slick-slide .logo{
+        @media screen and (max-width: $break-xlarge){
+        	height: 64px;
+        }
+        @media screen and (max-width: $break-medium){
+        	height: 84px;
+        }
+    }
 	a.close{
 		// /display: none;
 		z-index: 9999;
@@ -61,7 +76,7 @@ ul#testimonial-clients{
 	}
 	//display:none;
 	li{
-		width:33.33%;
+		width:25%;
 		height:50%;
 		@media screen and (max-width: $break-small){
 			width:50%;
@@ -72,7 +87,7 @@ ul#testimonial-clients{
 			}
 			height:auto;
 		}
-		@media screen and (max-width: $break-medium) and (min-height: 1000px){
+		@media screen and (max-width: $break-medium -1) {
 			width:50%;
 			height:33.33%;
 		}
@@ -121,6 +136,7 @@ ul#testimonial-clients{
 	}
 	.slick-slide{
 		text-align: center;
+		background-color: $light-grey;
 		//@include abs-pos(0,auto,auto,0);
 	//	float: left;
 		&:before{
@@ -136,12 +152,22 @@ ul#testimonial-clients{
 		}
 		header{
 			margin-bottom: 40px;
+			@media screen and (max-width: $break-xlarge){
+				margin-bottom: 20px;
+			}
+			@media screen and (max-width: $break-medium){
+				margin-bottom: 40px;
+			}
 		}
 		blockquote{
 			width:100%;
 			padding: 0 10%;
 			p{
 				@include font-size(30);
+				@media screen and (max-width: $break-xlarge){
+					@include font-size(22);
+					padding: 0 5%;
+				}
 				@media screen and (max-width: $break-small){
 					@include font-size(18);
 				}
@@ -150,6 +176,9 @@ ul#testimonial-clients{
 			}
 			footer{
 				@include font-size(20);
+				@media screen and (max-width: $break-xlarge){
+					@include font-size(14);
+				}
 				@media screen and (max-width: $break-small){
 					@include font-size(12);
 				}
@@ -159,6 +188,9 @@ ul#testimonial-clients{
 	}
 	.slick-dots{
 		@include abs-pos(auto,auto,30px,0);
+		@media screen and (max-width: $break-xlarge){
+			@include abs-pos(auto,auto,15px,0);
+		}
 		width: 100%;
 		text-align: center;
 		li{
@@ -174,6 +206,7 @@ ul#testimonial-clients{
 				padding:0;
 				text-indent: -1000px;
 				outline: none;
+				overflow: hidden;
 			}
 			&.slick-active{
 				button{

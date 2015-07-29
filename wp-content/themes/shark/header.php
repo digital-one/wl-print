@@ -72,7 +72,11 @@
 </nav>
 */
 ?>
-<small><a href="tel:01422376446"><i class="fa fa-phone"></i> 01422 315 000 </a></small>
+<small><a href="tel:01422 315 000">01422 315 000</a>
+<a href="mailto:info@wlprint.co.uk">info@wlprint.co.uk</a>
+<a href="http://www.wlgroup.co.uk" target="_blank">Part of W&amp;L Group</a>
+</small>
+
 </section>
         </header>
     

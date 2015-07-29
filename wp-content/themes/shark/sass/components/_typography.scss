@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5{
 	line-height:90%;
 	margin: 0 0 10px;
 	@media screen and (max-width: $break-xlarge){
-		@include font-size(38);
+		@include font-size(42);
 	}
 	@media screen and (max-width: $break-small){
 		@include font-size(26);

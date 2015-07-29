@@ -20,7 +20,7 @@ list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),
         $c=1;
 while(the_repeater_field('image_grid')): 
     $class="";
-    if($c>6) $class=' medium-up';
+    if($c>8) $class=' medium-up';
     if($c>10) $class=' medium-up large-up';
     if($c>12) $class=' medium-up large-up xlarge-up';
 list($src,$w,$h) = wp_get_attachment_image_src(get_sub_field('image'), 'full');
@@ -49,14 +49,18 @@ endif;
     <ul>
         <?php foreach($terms as $term): ?>
         <?php 
-        list($src,$w,$h) = wp_get_attachment_image_src(get_field('white_icon',$term),'sector-icon');
+        list($src,$w,$h) = wp_get_attachment_image_src(get_field('white_icon',$term),'full');
        // $src = getRetinaSrc($src);
         ?>
         <li class="item item-<?php echo $c ?>">
 <div class="handle hover"><div><img src="<?php echo $src ?>" alt="<?php echo $term->name ?>" /><h3><span><?php echo $term->name ?></span></h3><?php /*<h4 class="underline"><?php echo get_field('sub_heading',$term) ?></h4>*/ ?></div></div>
 <div class="main"><p><?php echo $term->description ?></p>
 <?php if($featured_cs = get_field('category_featured_case_study',$term)): ?>
+<?php if($term->term_id!=7 and $term->term_id !=4): ?>
     <a href="<?php echo get_permalink($featured_cs->ID) ?>" class="case-study-btn button push-link">Read Case Study</a>
+<?php else: ?>
+  <a href="<?php echo home_url() ?>/#work" class="case-study-btn button">View Our Work</a>
+<?php endif ?>
 <?php endif ?>
 </div><aside>
 <?php if(get_field('category_services_rptr', $term)): ?>

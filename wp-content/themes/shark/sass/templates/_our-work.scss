@@ -69,16 +69,16 @@ ul#featured-work{
 					}
 					
 					h3{
-						@include font-size(18);
+						@include font-size(20);
 						margin-bottom:10px; 
 						@media screen and (max-width: $break-xlarge){
-							@include font-size(16);
+							@include font-size(18);
 						}
 					}
 					h4{
-						@include font-size(16);
+						@include font-size(18);
 						@media screen and (max-width: $break-xlarge){
-							@include font-size(14);
+							@include font-size(16);
 						}
 						color: white;
 						margin-bottom: 35px;

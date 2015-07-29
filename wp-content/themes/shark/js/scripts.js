@@ -38,6 +38,7 @@ var isMobile = $(window).width() <= 660,
 	$totalPages = 0,
 	$sliderActive = false,
 	$pages=[],
+	$root='http://92.60.114.159/~wlprintco',
 	$singlePage=false,
 	$firstLoad=true,
 	$homeLoaded=false,
@@ -103,35 +104,50 @@ resetTestimonials = function(){
 	$('#testimonials a.close').hide();
 }
 initSlickSlider = function(){
- console.log('init slick')
+ //console.log('init slick')
 var _button = $('ul#testimonial-clients a.client'),
 		_grid = $('ul#testimonial-clients'),
 		_close = $('#testimonials a.close'),
 		_slider = $('#testimonials #testimonial-slider');
 
+
+$('#home-slider').slick({
+	    dots: false,
+	    autoplay: true,
+	    autoplaySpeed: 4000,
+	    speed: 600,
+	    pauseOnHover: true,
+	    arrows: false
+	});
+
+
 	$('#testimonial-slider').slick({
 	    dots: true,
 	    autoplay: false,
-	    //autoplaySpeed: 4000,
-	    speed: 600,
-	   // pauseOnHover: true,
+	   autoplaySpeed: 3000,
+	    speed: 400,
+	    pauseOnHover: false,
+	    fade:false,
 	    arrows: false
 	});
-		$('#testimonial-slider').on('afterChange', function(event, slick, currentSlide){
+/*		$('#testimonial-slider').on('afterChange', function(event, slick, currentSlide){
   _slider.fadeIn(100);
   $('#testimonials a.close').show();
-});
-	_close.on('click',function(e){
-			console.log('click')
+}); */
+	$('body').on('click touch-start','#testimonials a.close',function(e){
+			//console.log('click')
 			e.preventDefault();
 			$(this).hide();
 			_slider.fadeOut(100);
 			})
 
-		_button.on('click',function(e){
+		$('body').on('click touch-start','ul#testimonial-clients a.client',function(e){
 			var _index = _button.index($(this));
+
 		e.preventDefault();
 		$('#testimonial-slider').slick('slickGoTo',_index,false);
+		 _slider.fadeIn(100);
+  $('#testimonials a.close').show();
 		
 		
 		
@@ -151,13 +167,21 @@ refreshGrid = function(){
 		_windowWidth = $(window).width(),
 		_windowHeight = $(window).height(),
 		_diff = (_windowHeight - _gridHeight)/2,
+		_homeLinkHeight = $('#home-link').height(),
+		_homeLinkTop = (_diff - _homeLinkHeight)/2,
 		_diff2 = _windowHeight - _diff;
 	if(!isMobile){
 	
-		if(_windowWidth>1019){
+if(_windowWidth>1019){
 	$('.what-we-do .page-title, .what-we-do .content, .client-resources .page-title, .client-resources .content, .contact .content, .our-work .page-title, .what-clients-say .page-title, .contact .page-title').css({
 		'height':_diff+'px'
 	})
+	/*
+			$('#home-link').not('.home #home-link').css({
+	'top': _homeLinkTop+'px',
+	'margin-top': 0
+})
+*/
 	$('ul#featured-work, #testimonials').css({
 		'height': _diff2+'px'
 	})
@@ -165,14 +189,28 @@ refreshGrid = function(){
 		'height': _gridHeight+'px'
 	})
 } else {
+
+	$('ul#featured-work, #testimonials').css({
+		'height': (_diff2-35)+'px'
+	})
+	$('.client-resources .banner, .contact #map').css({
+		'height': _gridHeight+'px'
+	})
+
+
 	$('.what-we-do .page-title, .client-resources .page-title, .our-work .page-title, .what-clients-say .page-title, .contact .page-title').css({
 		'height':(_diff+35)+'px'
 	})
 	$('.what-we-do .content, .client-resources .content, .contact .content').css({
 		'height':(_diff-35)+'px'
 	})
+} 
+
+} else {
+	$('.page-title, .content, .banner, #map, ul#featured-work, #testimonials,#home-link').removeAttr('style');
+
 }
-}
+
 }
 refreshGrid();
 $(window).on('resize',refreshGrid);
@@ -221,7 +259,13 @@ morePostsClick = function(e){
            		if(isMobile || isIE9){
            			$($element).append($items);
            		} else {
-               $container.append($items).masonry('appended',$items);
+           //  $($element).append($items).masonry('appended',$items);
+           //    $($element).masonry('reload');
+           
+           $($element).append($items).imagesLoaded(function(){
+   				 $($element).masonry( 'appended', $items, true );
+			}); 
+
 					}
          });
 }
@@ -638,7 +682,7 @@ showOverlay('true');
 
 	if(url==null){ //on homepage
 		isHome = true;
-		//$('#home-link').fadeIn(200,"easeInQuad");
+		$('#home-link').fadeIn(200,"easeInQuad");
 		$('#nav ul li:first').addClass('current-menu-item');
 		$('#nav').removeClass("single");
 		if($homeLoaded){
@@ -680,7 +724,7 @@ showOverlay('true');
 	 	$('#nav').addClass('single');
 	 	//load only the requested url (not homepage)
 	 	//if(console) console.log('single page')
-	 	//$('#home-link').fadeOut(200,"easeOutQuad");
+	 	$('#home-link').fadeOut(200,"easeOutQuad");
 	 	$singlePage=true;
 	 	if(!$firstLoad){  //if single page and not first load, get page
 	 	$totalPages=1;
@@ -741,7 +785,7 @@ $.each($pageCache, function( key, obj) {
      		$.get(url).done(function(data){
      		
 			var $page = $(data).find('.section');
-			if(!isMobile && $page.attr('id')!="work-single") $page.removeAttr('id');
+			if(!isMobile && $page.attr('id')!="work-single" && $page.attr('id')!="enlightenment-page") $page.removeAttr('id');
 			
 			if(index==0){ //if first page, change the page title
 
@@ -847,10 +891,17 @@ initPageScripts = function(){
 
 	initMap(); //init map
 	if(!$sliderActive && isMobile) initSlickSlider();
-	if(isMobile && location.hash){
+	if(isMobile && location.hash){ //if mobile, scroll to hash if in URL
 	var _hash = location.hash;
-	location.href= '/'+_hash;
+	var animationSpeed = 200;
+		var $offset =-70;
+		var $anchor = _hash;
+		$.scrollTo( $anchor, animationSpeed, {
+          easing: 'easeInOutExpo',
+          offset: $offset
+        });
 	}
+
 	if($('#enlightenment-page').length){
 	if(!isMobile && !isIE9){
 	initMasonry(); //init masonry
@@ -985,7 +1036,7 @@ $('main').attr('id','fullpage');
          	setTimeout(function(){
   					resetTestimonials();
 				}, 500);
-         	
+
          	if(index!=3) resetSectorMenu(false);
          	if(index==1 && nextIndex>1 ){
          		setTimeout(function(){
@@ -994,7 +1045,7 @@ $('main').attr('id','fullpage');
          	
          	}
          	if(index>1 && nextIndex==1){
-         		$('#home-link').fadeOut(100);
+         		//$('#home-link').fadeOut(100);
          	}
          	
          	},
@@ -1265,6 +1316,30 @@ switchAccordion = function(){
 	}
 }
 
+scrollTo = function(e){
+	e.preventDefault();
+		var _this = e.currentTarget;
+		var _urlSegments = $(_this).attr('href').split('/');
+		var _hash = _urlSegments[_urlSegments.length-1];
+		var animationSpeed = 200;
+		var $offset =-70;
+		var $anchor = _hash;
+		$.scrollTo( $anchor, animationSpeed, {
+          easing: 'easeInOutExpo',
+          offset: $offset
+        });
+}
+
+initScrollTo = function(){
+		//e.preventDefault();
+	//console.log('init scroll to');
+	$('body').on('click','#nav a, .caption a',scrollTo);
+}
+destroyScrollTo = function(){
+	//console.log('destroy scroll to');
+	$('body').off('click','#nav a, .caption a', scrollTo);
+}
+
 initPage = function(){
 
 	loadContent(location.href, true); 
@@ -1274,8 +1349,10 @@ initPage = function(){
 	}
 	if(!isMobile){ //what we do panel
 		activateSectorClick();
+		destroyScrollTo();
 	} else {
 		activateMobileSectorClick();
+		initScrollTo();
 		
 	}
 	switchMenu();
@@ -1293,6 +1370,8 @@ setSectionAnchors = function(state){
 	})
 	
 }
+
+
 refreshPage = function(){
 	isMobile = $(window).width() <= 660;
 	isTablet = $(window).width() > 660 && $(window).width() <= 1020;
@@ -1311,6 +1390,7 @@ refreshPage = function(){
 	//toggle fullscreen
 	if(!isMobile){
 		initScrollPanel();
+		destroyScrollTo();
 	//	destroyFullPage();
 	if(!$fullPageActive) activateFullPage();
 	//	activateFullPage(true);
@@ -1321,6 +1401,7 @@ refreshPage = function(){
 		destroyScrollPanel();
 		destroyHistoryActions();
 		setSectionAnchors(true);
+		initScrollTo();
 
 	}
 

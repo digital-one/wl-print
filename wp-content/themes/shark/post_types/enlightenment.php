@@ -118,7 +118,7 @@ function add_cpt_enlightenment_custom_columns($column,$id){
 
 function add_cpt_enlightenment_rewrite_rules(){ 
 
-add_rewrite_rule('^enlightenment/archive/pge/([^/]*)/?', 'index.php?pagename=enlightenment&pge=$matches[1]','top');
+add_rewrite_rule('^gallery/archive/pge/([^/]*)/?', 'index.php?pagename=gallery&pge=$matches[1]','top');
 
 }
 
